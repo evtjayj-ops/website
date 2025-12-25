@@ -1,5 +1,5 @@
-baseURL: "https://pascalmichaillat.org/hugo-website/" 
-title: Moritz-Maria von Igelfeld
+baseURL: "https://jaydenevett.cv" 
+title: Jayden Evett
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -24,14 +24,10 @@ menu:
         - name: Data
           url: data/
           weight: 4 
-        - name: Blog
-          url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
-          weight: 6
 
 params:
-    description: "This website hosts Moritz-Maria von Igelfeld's research papers, books, course materials, data, curriculum vitae, and contact information."
-    author: Moritz-Maria von Igelfeld
-    # googleAnalyticsID: "G-XXXXX"
+    description: "This website includes Jayden Evett's research papers, books, curriculum vitae, and contact information."
+    author: Jayden Evett
     DateFormat: "January 2006"
     defaultTheme: light
     hideFooter: false
