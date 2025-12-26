@@ -35,14 +35,12 @@ params:
   disableSpecial1stPost: true
   disableAnchoredHeadings: true
   ShowPostNavLinks: false
-  ShowBreadCrumbs: true
+  ShowBreadCrumbs: false
   ShowCodeCopyButtons: false
   ShowAllPagesInArchive: false
   MainSections:
-    - books
-    - courses
-    - papers
-    - data
+    - written-work
+    - professional-portfolio
   ShowToc: false
   disableScrollToTop: true
   TocOpen: true
