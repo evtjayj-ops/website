@@ -14,7 +14,7 @@ disableAnchoredHeadings: true
 ---
 <br>
 
-<img src="https://www.nziia.org.nz/assets/PublicationImages/COVER-NZIR-2023-Vol-48-No-5-SepOct__FillWzMwMCw0MDBd.JPG" height="100" float="right")>
+<img src="/static/images/NZIIA-logo.png" height="100" float="right")>
 
 + [Download the PDF (826KB)](/1.pdf) 
 
