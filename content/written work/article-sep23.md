@@ -13,7 +13,9 @@ disableAnchoredHeadings: true
 
 ---
 <br>
-<img src="/static/favicon-16x16.png" float=right>
+
+<img src="/static/favicon-16x16.png" style=(float: right;)>
+
 + [Download the PDF (826KB)](/1.pdf) 
 
 ---
