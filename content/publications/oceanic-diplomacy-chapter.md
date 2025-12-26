@@ -4,13 +4,10 @@ date: 01-11-2025
 url: /oceanic-diplomacy-chapter
 aliases: 
     - /oceanic-diplomacy-chapter.html
-tags: ["business cycles", "DMP model", "job rationing", "matching model", "Shimer puzzle", "unemployment", "wage rigidity"]
+tags: ["indigenous diplomacy", "Pacific Islands", "Aotearoa New Zealand", "conflict resolution", "Māori""]
 author: ["Jayden Evett"]
 description: "This paper proposes a matching model of the labor market with job rationing: unemployment persists even without matching frictions. Published in AER, 2012." 
 summary: "This paper proposes a matching model of the labor market with job rationing: unemployment does not disappear in the absence of matching frictions. In recessions, job rationing drives the rise of unemployment, whereas matching frictions contribute little to it." 
-cover:
-    image: "/1s.png"
-    alt: "Rationing unemployment and frictional unemployment in the United States, 1964–2009"
 editPost:
     URL: "https://doi.org/10.26021/16153"
     Text: "Oceanic Diplomacy (2025)"
@@ -29,21 +26,6 @@ editPost:
 This paper proposes a search-and-matching model of unemployment in which jobs are rationed: the labor market does not clear in the absence of matching frictions. This job shortage arises in an economic equilibrium from the combination of some wage rigidity and diminishing marginal returns to labor. In recessions, job rationing is acute, driving the rise in unemployment, whereas matching frictions contribute little to unemployment. Intuitively in recessions, jobs are lacking, the labor market is slack, and recruiting is easy and inexpensive, so matching frictions do not matter much. In a calibrated model, cyclical fluctuations in the composition of unemployment are large.
 
 ---
-
-##### Figure 1E: Equilibrium of the job-rationing model in good times
-
-![Equilibrium of the job-rationing model in good times](/1a.png)
-
-##### Figure 1F: Equilibrium of the job-rationing model in bad times
-
-![Equilibrium of the job-rationing model in bad times](/1b.png)
-
-##### Figure 5: Rationing unemployment and frictional unemployment in the job-rationing model calibrated to the United States, 1964--2009
-
-![Rationing unemployment and frictional unemployment in the job-rationing model calibrated to the United States, 1964--2009](/1c.png)
-
----
-
 
 ##### Citation
 
