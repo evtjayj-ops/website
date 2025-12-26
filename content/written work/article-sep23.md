@@ -19,7 +19,7 @@ disableAnchoredHeadings: false
 
 This is where the words for the abstract go.
 
-+ [Download the PDF (826KB) <i class="fas fa-camera"></i>](/1.pdf) 
++ [Download the PDF (826KB) ![PDF icon](/static/favicon-16x16.pngl)](/1.pdf) 
 
 ___
 
