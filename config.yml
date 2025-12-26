@@ -45,7 +45,6 @@ params:
   TocOpen: true
   ShowWordCount: false
   UseHugoToc: true
-  enableEmoji: true
   comments: false
   math: true
   profileMode:
