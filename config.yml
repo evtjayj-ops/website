@@ -30,12 +30,12 @@ params:
   defaultTheme: light
   hideFooter: true
   disableThemeToggle: true
-  ShowShareButtons: true
+  ShowShareButtons: flase
   ShowReadingTime: false
   disableSpecial1stPost: true
   disableAnchoredHeadings: true
   ShowPostNavLinks: false
-  ShowBreadCrumbs: false
+  ShowBreadCrumbs: true
   ShowCodeCopyButtons: false
   ShowAllPagesInArchive: false
   MainSections:
