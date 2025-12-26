@@ -14,7 +14,7 @@ disableAnchoredHeadings: true
 ---
 <br>
 
-<img src="/static/images/NZIIA-logo.png" height="100" float="right">
+<img src="/static/images/NZIIA-logo.png" height="100" style="float: right; margin-right: 15px">
 
 + [Download the PDF (826KB)](/1.pdf) 
 
