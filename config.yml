@@ -56,14 +56,14 @@ params:
           imageWidth: 150
           imageHeight: 150
           buttons:
-            - name: Written work
-              url: written-work/
-            - name: Professional portfolio
-             url: profesisonal-portfolio/
-            - name: PhD thesis
-              url: https://hdl.handle.net/1885/733750511
-            - name: Master's thesis
-              url: https://hdl.handle.net/1885/733713482
+          - name: Written work
+            url: written-work/
+          - name: Professional portfolio
+            url: profesisonal-portfolio/
+          - name: PhD thesis
+            url: https://hdl.handle.net/1885/733750511
+          - name: Master's thesis
+             url: https://hdl.handle.net/1885/733713482
 
     socialIcons:
         - name: CV
