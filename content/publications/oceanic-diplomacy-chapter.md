@@ -1,6 +1,6 @@
 ---
 title: "Mā whero, mā pango ka oti te mahi: The role of indigenous diplomacies in the success of the 1997 Burnham peace talks" 
-date: 2012-06-01
+date: 2025-11-01
 url: /oceanic-diplomacy-chapter
 aliases: 
     - /oceanic-diplomacy-chapter.html
@@ -13,7 +13,7 @@ cover:
     alt: "Rationing unemployment and frictional unemployment in the United States, 1964–2009"
 editPost:
     URL: "https://doi.org/10.1257/aer.102.4.1721"
-    Text: "American Economic Review"
+    Text: "_Oceanic Diplomacy_ (2025)"
 
 ---
 
