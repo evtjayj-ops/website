@@ -21,13 +21,15 @@ editPost:
 
 ##### Abstract
 
-This paper proposes a search-and-matching model of unemployment in which jobs are rationed: the labor market does not clear in the absence of matching frictions. This job shortage arises in an economic equilibrium from the combination of some wage rigidity and diminishing marginal returns to labor. In recessions, job rationing is acute, driving the rise in unemployment, whereas matching frictions contribute little to unemployment. Intuitively in recessions, jobs are lacking, the labor market is slack, and recruiting is easy and inexpensive, so matching frictions do not matter much. In a calibrated model, cyclical fluctuations in the composition of unemployment are large.
+This chapter explains why the 1997 Burnham peace talks succeeded where earlier Bougainville negotiations failed. It argues that Melanesian _trautim_ and Māori pōwhiri functioned as integral forms of indigenous diplomacy, not symbolic additions, enabling reconciliation, legitimacy, and commitment. By reshaping the social foundations of negotiation and complementing conflict ripeness, these practices helped produce durable agreements and challenge assumptions that conventional diplomacy alone can secure sustainable peace.
+
+A chapter in Salā George Carter, Greg Fry, and Gordon Nanau's _Oceanic Diplomacy_ (2025), the first book on traditional and contemporary indigenous practices that increasingly define Pacific regional diplomacy. 
 
 ---
 
 ##### Citation
 
-Michaillat, Pascal. 2012. "Do Matching Frictions Explain Unemployment? Not in Bad Times." *American Economic Review* 102 (4): 1721–1750. https://doi.org/10.1257/aer.102.4.1721.
+Evett, Jayden. 2025. "Mā whero, mā pango ka oti te mahi: The role of indigenous diplomacies in the success of the 1997 Burnham peace talks." in Carter, Salā George, Greg Fry, and Gordon Nanua. *Oceanic Diplomacy*: 355-384. https://doi.org/10.1257/aer.102.4.1721.
 
 ```latex
 @article{M12,
