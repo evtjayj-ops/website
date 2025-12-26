@@ -1,4 +1,4 @@
 ---
-title: "Books"
-description: "Books by Professor Dr von Igelfeld's."
+title: "Publications"
+description: "Written works by Jayden Evett"
 ---
