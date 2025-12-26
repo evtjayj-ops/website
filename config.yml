@@ -28,7 +28,7 @@ menu:
 params:
     description: "This website includes Jayden Evett's writing, including his theses, and contact information."
     author: Jayden Evett
-    DateFormat: "January 2000"
+    DateFormat: "January 1111"
     defaultTheme: light
     hideFooter: true
     disableThemeToggle: false
