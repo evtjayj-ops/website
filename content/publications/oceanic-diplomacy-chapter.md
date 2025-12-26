@@ -1,6 +1,6 @@
 ---
 title: "Mā whero, mā pango ka oti te mahi: The role of indigenous diplomacies in the success of the 1997 Burnham peace talks" 
-date: 01-11-2025
+date: 2025-11-01
 url: /oceanic-diplomacy-chapter
 tags: ["indigenous diplomacy", "Pacific Islands", "Aotearoa New Zealand", "conflict resolution", "Māori",]
 author: ["Jayden Evett"]
