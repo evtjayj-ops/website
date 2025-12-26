@@ -17,6 +17,8 @@ editPost:
 
 ---
 
+---
+
 + [Download the chapter](/1.pdf)
 + [Access the whole e-book](https://hdl.handle.net/10092/109247)
 
