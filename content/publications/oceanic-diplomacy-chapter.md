@@ -14,7 +14,7 @@ editPost:
 
 ---
 
-+ [Download the chapter](/static/oceanic-diplomacy-chapter.pdf)
++ [Download the chapter](/oceanic-diplomacy-chapter.pdf)
 + [Access the whole e-book](https://hdl.handle.net/10092/109247)
 
 ---
