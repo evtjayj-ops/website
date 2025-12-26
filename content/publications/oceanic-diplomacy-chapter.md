@@ -8,7 +8,7 @@ description: "This paper proposes a matching model of the labor market with job 
 summary: "This paper proposes a matching model of the labor market with job rationing: unemployment does not disappear in the absence of matching frictions. In recessions, job rationing drives the rise of unemployment, whereas matching frictions contribute little to it." 
 editPost:
     URL: "https://doi.org/10.26021/16153"
-    Text: "Oceanic Diplomacy (2025)"
+    Text: "*Oceanic Diplomacy* (2025)"
 
 ---
 
@@ -29,27 +29,14 @@ A chapter in Salā George Carter, Greg Fry, and Gordon Nanau's _Oceanic Diplomac
 
 ##### Citation
 
-Evett, Jayden. 2025. "Mā whero, mā pango ka oti te mahi: The role of indigenous diplomacies in the success of the 1997 Burnham peace talks." in Carter, Salā George, Greg Fry, and Gordon Nanua. *Oceanic Diplomacy*: 355-384. https://doi.org/10.1257/aer.102.4.1721.
-
-```latex
-@article{M12,
-author = {Pascal Michaillat},
-year = {2012},
-title = {Do Matching Frictions Explain Unemployment? Not in Bad Times},
-journal = {American Economic Review},
-volume = {102},
-number = {4},
-pages = {1721--1750},
-url = {https://doi.org/10.1257/aer.102.4.1721}}
-```
+Evett, Jayden. 2025. "Mā whero, mā pango ka oti te mahi: The role of indigenous diplomacies in the success of the 1997 Burnham peace talks." In *Oceanic Diplomacy: Reasserting Indigenous pathways
+through the contemporary Pacific*, edited by Salā George Carter, Greg Fry, and Gordon Nanua, 355-384. Macmillan Brown Centre for Pacific Studies. https://doi.org/10.1257/aer.102.4.1721.
 
 ---
 
 ##### Related material
 
-+ [Presentation slides](/1p.pdf)
-+ [Nontechnical summary for CentrePiece](https://cep.lse.ac.uk/pubs/download/cp365.pdf)
-+ [PhD dissertation (2010)](https://escholarship.org/uc/item/7jr3m96r) – My PhD dissertation at UC Berkeley is the basis for this paper. Chapter 2 in particular provides intuition for the main results of the paper based on an elementary, urn-ball model of the labor market.
++ [Master's thesis (2021)](https://openresearch-repository.anu.edu.au/items/1c8a8eb2-9e89-4408-ab74-5e598288b23d)) – My Master of Diplomacy (Advanced) thesis completed at the Australian National Univesrity was the basis for this chapter, which is a condensed version of its analysis and findings.
 
 ---
 
