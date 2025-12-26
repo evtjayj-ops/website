@@ -14,7 +14,7 @@ disableAnchoredHeadings: true
 ---
 <br>
 
-+ [Download the PDF (:page_facing_up: 826KB)](/1.pdf) 
++ [Download the PDF (:page_facing_up: 826KB)](/NZIR-article-sep23.pdf) 
 
 ---
 
