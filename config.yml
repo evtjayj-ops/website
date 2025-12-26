@@ -23,14 +23,13 @@ menu:
       url: https://hdl.handle.net/1885/733713482
       weight: 4
 params:
-  description: This website includes Jayden Evett's writing, including his theses,
-    and contact information.
+  description: This website includes Jayden Evett's writing, including his theses, and contact information.
   author: Jayden Evett
   DateFormat: January 2006
   defaultTheme: light
   hideFooter: true
   disableThemeToggle: true
-  ShowShareButtons: flase
+  ShowShareButtons: false
   ShowReadingTime: false
   disableSpecial1stPost: true
   disableAnchoredHeadings: true
