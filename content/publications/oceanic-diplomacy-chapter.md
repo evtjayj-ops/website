@@ -4,7 +4,7 @@ date: 01-11-2025
 url: /oceanic-diplomacy-chapter
 aliases: 
     - /oceanic-diplomacy-chapter.html
-tags: ["indigenous diplomacy", "Pacific Islands", "Aotearoa New Zealand", "conflict resolution", "Māori""]
+tags: ["indigenous diplomacy", "Pacific Islands", "Aotearoa New Zealand", "conflict resolution", "Māori",]
 author: ["Jayden Evett"]
 description: "This paper proposes a matching model of the labor market with job rationing: unemployment persists even without matching frictions. Published in AER, 2012." 
 summary: "This paper proposes a matching model of the labor market with job rationing: unemployment does not disappear in the absence of matching frictions. In recessions, job rationing drives the rise of unemployment, whereas matching frictions contribute little to it." 
