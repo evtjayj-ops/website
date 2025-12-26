@@ -17,12 +17,8 @@ editPost:
 
 ---
 
----
-
-
-+ [Paper](/1.pdf)
-+ [Online appendix](/1a.pdf)
-+ [Code and data](https://github.com/pmichaillat/job-rationing)
++ [Download the chapter](/1.pdf)
++ [Access the whole e-book](https://hdl.handle.net/10092/109247)
 
 ---
 
