@@ -3,13 +3,13 @@ title: "Why business as usual is a risk for New Zealand’s foreign policy"
 date: 2023-08-01
 tags: ["Aotearoa New Zealand","diplomacy","foreign policy", "Pacific Islands",]
 author: ["Jayden Evett"]
-description: "This book discusses Portugese irregular verbs in great details."
-summary: "This book discusses Portugese irregular verbs in great details."
+description: "An article critiquing the first foreign policy speech by then-PM Chris Hipkins, warning that 'values-based' diplomacy had lost meaning and direction."
+summary: "An article critiquing the first foreign policy speech by then-PM Chris Hipkins, warning that 'values-based' diplomacy had lost meaning and direction."
 editPost:
     URL: "https://www.nziia.org.nz/articles/"
     Text: "New Zealand International Review"
 showToc: false
-disableAnchoredHeadings: false
+disableAnchoredHeadings: true
 
 ---
 <br>
@@ -20,13 +20,13 @@ disableAnchoredHeadings: false
 
 #### Abstract
 
-New Zealand’s long-standing “values-based” foreign policy has drifted into business as usual, losing clarity, credibility, and direction while remaining largely insulated from public scrutiny. The article argues for a people-driven reset—rooted in public debate and indigenous principles—to replace a foreign policy that now risks inconsistency, reputational damage, and strategic drift.
+This article responds to then Prime Minister Chris Hipkins' [July 2023 foreign affairs speech](https://www.beehive.govt.nz/speech/prime-ministers-foreign-policy-speech-nziia) - his first as PM - where he announced a continuation of Aotearoa New Zealand's long-standing "values-based" foreign policy. I argue that 'business as usual' has let this policy lose clarity, credibility, and direction while insulating it from meaningful public scrutiny. I advocate for a people-driven reset – rooted in public debate and indigenous principles – to replace a foreign policy that now risks inconsistency, reputational damage, and strategic drift.
 
 ---
 
 #### Citation
 
-Jayden Evett. "Why business as usual is a risk for New Zealand’s foreign policy" _New Zealand International Review_ (Aug-Sep 2023, pp 19-20).
+Jayden Evett. "Why business as usual is a risk for New Zealand’s foreign policy" _New Zealand International Review_ 48, no. 5, (Sep 2023, pp 19-20).
 
 
 ```latex
@@ -35,6 +35,8 @@ Jayden Evett. "Why business as usual is a risk for New Zealand’s foreign polic
     author = "Jayden Evett", 
     journal = "New Zealand International Review",
     year = 2023,
-    month = "August-September",
+    volume = "48"
+    number = "5"
+    month = "September",
     pages  = "19--20",
 ```
