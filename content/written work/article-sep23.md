@@ -58,14 +58,15 @@ New Zealanders deserve a foreign policy as authentic and innovative as they are,
 
 #### Citation
 
-Moritz-Maria von Igelfeld. 1997. *Portugese Irregular Verbs*. Regensburg, Germany: Regensburg University Press. http://www.alexandermccallsmith.com/book/portuguese-irregular-verbs.
+Jayden Evett. "Why business as usual is a risk for New Zealand’s foreign policy" _New Zealand International Review_ (Aug-Sep 2023, pp 19-20).
+
 
 ```latex
-@book{I97,
-author = {Moritz-Maria von Igelfeld},
-year = {1997},
-title = {Portugese Irregular Verbs},
-publisher = {Regensburg University Press},
-address = {Regensburg, Germany},
-url = {http://www.alexandermccallsmith.com/book/portuguese-irregular-verbs}}
+@article{evett2023,
+    title        = "Why business as usual is a risk for New Zealand's foreign policy",
+    author       = "Jayden Evett", 
+    journal  = "Proceedings of the National Academy of Sciences",
+    year     = 2023,
+    month   = "August-September",
+    pages    = "19--20",
 ```
