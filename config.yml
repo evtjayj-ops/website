@@ -31,14 +31,14 @@ params:
     DateFormat: "January 2006"
     defaultTheme: light
     hideFooter: true
-    disableThemeToggle: false
-    ShowShareButtons: false
+    disableThemeToggle: true
+    ShowShareButtons: true
     ShowReadingTime: false
     disableSpecial1stPost: true
     disableAnchoredHeadings: true
     ShowPostNavLinks: false
     ShowBreadCrumbs: false
-    ShowCodeCopyButtons: true
+    ShowCodeCopyButtons: false
     ShowAllPagesInArchive: false
     MainSections: ["books","courses","papers","data"]
     ShowToc: false
