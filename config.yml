@@ -48,11 +48,10 @@ params:
     profileMode:
           enabled: true
           title: Dr Jayden Evett
-          postnoms: "BA MDipl (Adv) PhD"
-          subtitle: "I am giant turd"
+          subtitle: "**In 2024/2025, I will be on the academic job market.**</br>I am giant turd"
           imageUrl: "profilepicture.png"
-          imageWidth: 160
-          imageHeight: 160
+          imageWidth: 150
+          imageHeight: 150
           buttons:
             - name: Publications
               url: publications/
