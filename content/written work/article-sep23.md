@@ -15,11 +15,11 @@ disableAnchoredHeadings: false
 
 ---
 
-+ [Download the PDF (826KB)](/1.pdf)
-
 #### Abstract
 
 This is where the words for the abstract go.
+
++ [Download the PDF (826KB) <i class="fas fa-camera"></i>](/1.pdf) 
 
 ___
 
@@ -63,10 +63,10 @@ Jayden Evett. "Why business as usual is a risk for New Zealand’s foreign polic
 
 ```latex
 @article{evett2023,
-    title        = "Why business as usual is a risk for New Zealand's foreign policy",
-    author       = "Jayden Evett", 
-    journal  = "Proceedings of the National Academy of Sciences",
-    year     = 2023,
-    month   = "August-September",
-    pages    = "19--20",
+    title = "Why business as usual is a risk for New Zealand's foreign policy",
+    author = "Jayden Evett", 
+    journal = "New Zealand International Review",
+    year = 2023,
+    month = "August-September",
+    pages  = "19--20",
 ```
