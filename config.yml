@@ -49,7 +49,7 @@ params:
           enabled: true
           title: Jayden Evett
           subtitle: "I am giant turd"
-          image: "profilepicture.png"
+          imageUrl: "profilepicture.png"
           imageWidth: 160
           imageHeight: 160
           buttons:
