@@ -14,23 +14,20 @@ menu:
     main:
         - name: Publications
           url: publicaitons/
-          weight: 5 
+          weight: 1 
         - name: PhD thesis
-          url: papers/
+          url: https://hdl.handle.net/1885/733750511
           weight: 2
         - name: Master's thesis
-          url: courses/
-          weight: 3
-        - name: Data
-          url: data/
-          weight: 4 
+          url: https://hdl.handle.net/1885/733713482
+          weight: 3 
 
 params:
-    description: "This website includes Jayden Evett's research papers, books, curriculum vitae, and contact information."
+    description: "This website includes Jayden Evett's writing, including his theses, and contact information."
     author: Jayden Evett
-    DateFormat: "January 2006"
+    DateFormat: "January 2025"
     defaultTheme: light
-    hideFooter: false
+    hideFooter: true
     disableThemeToggle: true
     ShowShareButtons: false
     ShowReadingTime: false
@@ -51,8 +48,7 @@ params:
     profileMode:
           enabled: true
           title: Jayden Evett
-          subtitle: "I am a Professor in the Institute of Romance Philology at the University of Regensburg, Germany. My research focuses on Portuguese irregular verbs. I was a doctoral student of Professor Dr Dieter Vogelsang in Munich, and later a second assistant of Professor Walter Schoeffler-Henschell at the University of Wiesbaden."
-          imageUrl: "profilepicture.png"
+          subtitle: "I am giant turd"
           imageWidth: 160
           imageHeight: 160
           buttons:
