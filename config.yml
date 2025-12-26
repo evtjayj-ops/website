@@ -1,99 +1,100 @@
-baseURL: "http://jaydenevett.cv" 
+---
+baseURL: http://jaydenevett.cv
 title: Jayden Evett
 theme: PaperMod
-
 enableInlineShortcodes: true
 enableRobotsTXT: true
 pagination:
   pagerSize: 20
-
 taxonomies:
-    tag: tags
-
+  tag: tags
 menu:
-    main:
-        - name: Written work
-          url: written-work/
-          weight: 1 
-        - name: Professional portfolio
-          url: profesisonal-portfolio/
-          weight: 2 
-        - name: PhD thesis
-          url: https://hdl.handle.net/1885/733750511
-          weight: 3
-        - name: Master's thesis
-          url: https://hdl.handle.net/1885/733713482
-          weight: 4
-
+  main:
+    - name: Written work
+      url: written-work/
+      weight: 1
+    - name: Professional portfolio
+      url: profesisonal-portfolio/
+      weight: 2
+    - name: PhD thesis
+      url: https://hdl.handle.net/1885/733750511
+      weight: 3
+    - name: Master's thesis
+      url: https://hdl.handle.net/1885/733713482
+      weight: 4
 params:
-    description: "This website includes Jayden Evett's writing, including his theses, and contact information."
-    author: Jayden Evett
-    DateFormat: "January 2006"
-    defaultTheme: light
-    hideFooter: true
-    disableThemeToggle: true
-    ShowShareButtons: true
-    ShowReadingTime: false
-    disableSpecial1stPost: true
-    disableAnchoredHeadings: true
-    ShowPostNavLinks: false
-    ShowBreadCrumbs: false
-    ShowCodeCopyButtons: false
-    ShowAllPagesInArchive: false
-    MainSections: ["books","courses","papers","data"]
-    ShowToc: false
-    disableScrollToTop: true
-    TocOpen: true
-    ShowWordCount: false
-    UseHugoToc: true
-    comments: false
-    math: true
-    profileMode:
-          enabled: true
-          title: Dr Jayden Evett
-          subtitle: "This is a sample line of text. It includes samples of lines of text that I am sampling to put into this place. There are many texts thatI may wish to include here. These will no longer be samples at this point. Bur for now, they are just samples."
-          imageUrl: "profilepicture.png"
-          imageWidth: 150
-          imageHeight: 150
-          buttons:
-          - name: Written work
-            url: written-work/
-          - name: Professional portfolio
-            url: profesisonal-portfolio/
-          - name: PhD thesis
-            url: https://hdl.handle.net/1885/733750511
-          - name: Master's thesis
-           url: https://hdl.handle.net/1885/733713482
-
-    socialIcons:
-        - name: CV
-          url: cv.pdf
-        - name: Email
-          url: mailto:hello@jaydenevett.cv
-        - name: LinkedIn
-          url: https://www.linkedin.com/in/jaydenevett/
-        - name: Google Scholar
-          url: https://scholar.google.com/citations?user=ah64k5kAAAAJ&hl
-          
-
-    assets:
-        disableScrollBarStyle: true
-    cover:
-        hiddenInList: true
-        hiddenInSingle: true
-    label:
-      text: "Jayden Evett"
-      icon: favicon.ico
-      iconHeight: 18
-
+  description: This website includes Jayden Evett's writing, including his theses,
+    and contact information.
+  author: Jayden Evett
+  DateFormat: January 2006
+  defaultTheme: light
+  hideFooter: true
+  disableThemeToggle: true
+  ShowShareButtons: true
+  ShowReadingTime: false
+  disableSpecial1stPost: true
+  disableAnchoredHeadings: true
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: false
+  ShowAllPagesInArchive: false
+  MainSections:
+    - books
+    - courses
+    - papers
+    - data
+  ShowToc: false
+  disableScrollToTop: true
+  TocOpen: true
+  ShowWordCount: false
+  UseHugoToc: true
+  comments: false
+  math: true
+  profileMode:
+    enabled: true
+    title: Dr Jayden Evett
+    subtitle: This is a sample line of text. It includes samples of lines of text
+      that I am sampling to put into this place. There are many texts thatI may
+      wish to include here. These will no longer be samples at this point. Bur
+      for now, they are just samples.
+    imageUrl: profilepicture.png
+    imageWidth: 150
+    imageHeight: 150
+    buttons:
+      - name: Written work
+        url: written-work/
+      - name: Professional portfolio
+        url: profesisonal-portfolio/
+      - name: PhD thesis
+        url: https://hdl.handle.net/1885/733750511
+      - name: Master's thesis
+        url: https://hdl.handle.net/1885/733713482
+  socialIcons:
+    - name: CV
+      url: cv.pdf
+    - name: Email
+      url: mailto:hello@jaydenevett.cv
+    - name: LinkedIn
+      url: https://www.linkedin.com/in/jaydenevett/
+    - name: Google Scholar
+      url: https://scholar.google.com/citations?user=ah64k5kAAAAJ&hl
+  assets:
+    disableScrollBarStyle: true
+  cover:
+    hiddenInList: true
+    hiddenInSingle: true
+  label:
+    text: Jayden Evett
+    icon: favicon.ico
+    iconHeight: 18
 markup:
-    goldmark:
-        renderer:
-            unsafe: true
-    highlight:
-        guessSyntax: true
-        style: autumn 
-    tableOfContents:
-        endLevel: 2
-        ordered: false
-        startLevel: 2
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    guessSyntax: true
+    style: autumn
+  tableOfContents:
+    endLevel: 2
+    ordered: false
+    startLevel: 2
