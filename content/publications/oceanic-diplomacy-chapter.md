@@ -4,11 +4,11 @@ date: 2025-11-01
 url: /oceanic-diplomacy-chapter
 tags: ["indigenous diplomacy", "Pacific Islands", "Aotearoa New Zealand", "conflict resolution", "Māori",]
 author: ["Jayden Evett"]
-description: "This paper proposes a matching model of the labor market with job rationing: unemployment persists even without matching frictions. Published in AER, 2012." 
-summary: "This paper proposes a matching model of the labor market with job rationing: unemployment does not disappear in the absence of matching frictions. In recessions, job rationing drives the rise of unemployment, whereas matching frictions contribute little to it." 
+description: "his chapter explains why the 1997 Burnham peace talks succeeded where earlier Bougainville negotiations failed. Published in the book 'Oceanic Diplomacy' in 2025." 
+summary: "This chapter explains why the 1997 Burnham peace talks succeeded where earlier Bougainville negotiations failed. It shows how Melanesian trautim and Māori pōwhiri functioned as indigenous diplomacies that reconciled relationships in the culture in which they were broken. Together, these practices complemented conflict ripeness and were central to producing durable peace agreements." 
 editPost:
     URL: "https://doi.org/10.26021/16153"
-    Text: "*Oceanic Diplomacy* (2025)"
+    Text: "Oceanic Diplomacy (2025)"
 
 ---
 
@@ -23,7 +23,7 @@ editPost:
 
 This chapter explains why the 1997 Burnham peace talks succeeded where earlier Bougainville negotiations failed. It argues that Melanesian _trautim_ and Māori pōwhiri functioned as integral forms of indigenous diplomacy, not symbolic additions, enabling reconciliation, legitimacy, and commitment. By reshaping the social foundations of negotiation and complementing conflict ripeness, these practices helped produce durable agreements and challenge assumptions that conventional diplomacy alone can secure sustainable peace.
 
-A chapter in Salā George Carter, Greg Fry, and Gordon Nanau's _Oceanic Diplomacy_ (2025), the first book on traditional and contemporary indigenous practices that increasingly define Pacific regional diplomacy. 
+A chapter in Carter, Fry, and Nanau's _Oceanic Diplomacy_ (2025), the first book on traditional and contemporary indigenous practices that increasingly define Pacific regional diplomacy. 
 
 ---
 
