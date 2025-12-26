@@ -13,7 +13,7 @@ taxonomies:
 menu:
     main:
         - name: Publications
-          url: publicaitons/
+          url: publications/
           weight: 1 
         - name: PhD thesis
           url: https://hdl.handle.net/1885/733750511
