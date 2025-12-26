@@ -48,6 +48,7 @@ params:
     profileMode:
           enabled: true
           title: Dr Jayden Evett
+          postnoms: "BA MDipl (Adv) PhD"
           subtitle: "I am giant turd"
           imageUrl: "profilepicture.png"
           imageWidth: 160
