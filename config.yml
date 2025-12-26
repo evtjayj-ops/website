@@ -48,7 +48,7 @@ params:
     profileMode:
           enabled: true
           title: Dr Jayden Evett
-          subtitle: "**In 2024/2025, I will be on the academic job market.**</br>I am giant turd"
+          subtitle: "**I'm currently on the market for opportunities in the Pacific .**</br style=(magrin-bottom: 15px)>This is a sample line of text. It includes samples of lines of text that I am sampling to put into this place. There are many texts thatI may wish to include here. These will no longer be samples at this point. Bur for now, they are just samples."
           imageUrl: "profilepicture.png"
           imageWidth: 150
           imageHeight: 150
