@@ -63,7 +63,7 @@ params:
           - name: PhD thesis
             url: https://hdl.handle.net/1885/733750511
           - name: Master's thesis
-             url: https://hdl.handle.net/1885/733713482
+           url: https://hdl.handle.net/1885/733713482
 
     socialIcons:
         - name: CV
