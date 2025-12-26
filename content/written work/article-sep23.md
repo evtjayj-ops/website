@@ -13,18 +13,18 @@ disableAnchoredHeadings: true
 
 ---
 <br>
-
+<img src="/static/favicon-16x16.png" float=right>
 + [Download the PDF (826KB)](/1.pdf) 
 
 ---
 
-#### Abstract
+## Abstract
 
 This article responds to then Prime Minister Chris Hipkins' [July 2023 foreign affairs speech](https://www.beehive.govt.nz/speech/prime-ministers-foreign-policy-speech-nziia) - his first as PM - where he announced a continuation of Aotearoa New Zealand's long-standing "values-based" foreign policy. I argue that 'business as usual' has let this policy lose clarity, credibility, and direction while insulating it from meaningful public scrutiny. I advocate for a people-driven reset – rooted in public debate and indigenous principles – to replace a foreign policy that now risks inconsistency, reputational damage, and strategic drift.
 
 ---
 
-#### Citation
+## Citation
 
 Jayden Evett. "Why business as usual is a risk for New Zealand’s foreign policy" _New Zealand International Review_ 48, no. 5, (Sep 2023, pp 19-20).
 
