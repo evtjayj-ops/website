@@ -13,10 +13,10 @@ taxonomies:
 menu:
     main:
         - name: Written work
-          url: publications/
+          url: written-work/
           weight: 1 
-        - name: Design portfolio
-          url: design/
+        - name: Professional portfolio
+          url: profesisonal-portfolio/
           weight: 2 
         - name: PhD thesis
           url: https://hdl.handle.net/1885/733750511
@@ -68,8 +68,6 @@ params:
           url: cv.pdf
         - name: Email
           url: mailto:hello@jaydenevett.cv
-        - name: Website
-          url: http://jaydenevett.cv
         - name: LinkedIn
           url: https://www.linkedin.com/in/jaydenevett/
         - name: Google Scholar
