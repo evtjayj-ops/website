@@ -2,6 +2,7 @@
 baseURL: http://jaydenevett.cv
 title: Jayden Evett
 theme: PaperMod
+enableEmoji: true
 enableInlineShortcodes: true
 enableRobotsTXT: true
 pagination:
