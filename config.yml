@@ -68,8 +68,11 @@ params:
           url: cv.pdf
         - name: Email
           url: mailto:hello@jaydenevett.cv
+        - name: LinkedIn
+          url: https://www.linkedin.com/in/jaydenevett/
         - name: Google Scholar
           url: https://scholar.google.com/citations?user=ah64k5kAAAAJ&hl
+          
 
     assets:
         disableScrollBarStyle: true
