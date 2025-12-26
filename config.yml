@@ -12,13 +12,13 @@ taxonomies:
 
 menu:
     main:
-        - name: Books
-          url: books/
+        - name: Publications
+          url: publicaitons/
           weight: 5 
-        - name: Papers
+        - name: PhD thesis
           url: papers/
           weight: 2
-        - name: Courses
+        - name: Master's thesis
           url: courses/
           weight: 3
         - name: Data
@@ -56,12 +56,12 @@ params:
           imageWidth: 160
           imageHeight: 160
           buttons:
-            - name: Papers
-              url: papers/
-            - name: Books
-              url: books/
-            - name: Courses
-              url: courses/
+            - name: Publications
+              url: publications/
+            - name: PhD thesis
+              url: https://hdl.handle.net/1885/733750511
+            - name: Master's thesis
+              url: https://hdl.handle.net/1885/733713482
 
     socialIcons:
         - name: CV
@@ -69,7 +69,7 @@ params:
         - name: Email
           url: mailto:hello@jaydenevett.cv
         - name: Google Scholar
-          url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
+          url: https://scholar.google.com/citations?user=ah64k5kAAAAJ&hl
 
     assets:
         disableScrollBarStyle: true
@@ -77,7 +77,7 @@ params:
         hiddenInList: false
         hiddenInSingle: true
     label:
-      text: "Moritz-Maria von Igelfeld"
+      text: "Jayden Evett"
       icon: favicon.ico
       iconHeight: 18
 
