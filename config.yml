@@ -47,7 +47,7 @@ params:
     math: true
     profileMode:
           enabled: true
-          title: Jayden Evett
+          title: Dr Jayden Evett
           subtitle: "I am giant turd"
           imageUrl: "profilepicture.png"
           imageWidth: 160
