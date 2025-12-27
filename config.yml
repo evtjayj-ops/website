@@ -55,7 +55,7 @@ params:
       that I am sampling to put into this place. There are many texts thatI may
       wish to include here. These will no longer be samples at this point. Bur
       for now, they are just samples.
-    imageUrl: profilepicture.png
+    imageUrl: images/profilepicture.png
     imageWidth: 150
     imageHeight: 150
     buttons:
