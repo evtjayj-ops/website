@@ -83,7 +83,7 @@ params:
     hiddenInSingle: true
   label:
     text: Jayden Evett
-    icon: favicon.ico
+    icon: images/favicon.ico
     iconHeight: 18
 markup:
   goldmark:
