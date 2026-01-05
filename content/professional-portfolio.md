@@ -12,11 +12,14 @@ Below is a sample of my professional work as an instutitional engagement special
 ## Educational materials
 ### Posters
 
-This is an example of text
+<p align="center">
+  <img src="https://www.parliament.act.gov.au/__data/assets/image/0010/2979145/Poster-for-web-Australias-ten-territories.png" width="100px">  <img src="https://www.parliament.act.gov.au/__data/assets/image/0010/2979145/Poster-for-web-Australias-ten-territories.png" width="100px">   <img src="https://www.parliament.act.gov.au/__data/assets/image/0010/2979145/Poster-for-web-Australias-ten-territories.png" width="100px"> 
+  This image has words beneath it so I can explain what I have done
+</p>
 
 ### Case studies
 
-This is an example of text
++ [Senior student case study about adapting laws to technological developments (📄 329KB)](https://www.parliament.act.gov.au/__data/assets/pdf_file/0006/2997033/Topic-explainer-Adapting-laws-to-technological-developments.pdf)
 
 ---
 
