@@ -1,3 +1,18 @@
+---
+title: "Professional portfolio"
+description: "A selection of my professional work as an institutional engagement specialist over the past eight years."
+showToc: true
+disableAnchoredHeadings: false
+
+---
+
+Below is a sample of my professional work as an instutitional engagement specialist over the past eight years.
+
+---
+---
+
+
+
 <h1>Professional portfolio</h1>
 <p>Below is a selection of my professional work as an institutional engagement specialist over the past eight years.</p>
 <br>
