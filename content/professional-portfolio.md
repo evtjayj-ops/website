@@ -10,34 +10,24 @@ Below is a sample of my professional work as an instutitional engagement special
 ---
 
 ## Educational materials
-### Posters
+### ACT Legislative Assembly
+#### Visual resources
 
-<p align="center">
-  <img src="https://www.parliament.act.gov.au/__data/assets/image/0010/2979145/Poster-for-web-Australias-ten-territories.png" width="100px">  <img src="https://www.parliament.act.gov.au/__data/assets/image/0010/2979145/Poster-for-web-Australias-ten-territories.png" width="100px">   <img src="https://www.parliament.act.gov.au/__data/assets/image/0010/2979145/Poster-for-web-Australias-ten-territories.png" width="100px"> 
-  This image has words beneath it so I can explain what I have done
-</p>
++ [Australia's ten territories (📄 374KB)](https://www.parliament.act.gov.au/__data/assets/pdf_file/0004/2987608/Poster-Web-version-Australias-ten-territories.pdf)
++ [Australia's three levels of government (📄 784KB)](https://www.parliament.act.gov.au/__data/assets/pdf_file/0010/1470376/Poster-v2,-for-web-Levels-of-government.pdf)
++ [The separation of powers in the ACT (📄 381KB)](https://www.parliament.act.gov.au/__data/assets/pdf_file/0011/1470377/Poster-v2,-for-web-Separation-of-powers.pdf)
 
-### Case studies
+### Print resources
 
++ [All-ages factsheet about the history of First Australians and the Assembly (📄 560KB)](https://www.parliament.act.gov.au/__data/assets/pdf_file/0011/2822537/Factsheet-First-Australians-and-the-Assembly.pdf)
 + [Senior student case study about adapting laws to technological developments (📄 329KB)](https://www.parliament.act.gov.au/__data/assets/pdf_file/0006/2997033/Topic-explainer-Adapting-laws-to-technological-developments.pdf)
 
 ---
 
 ## Digital content
+### Video content
 
-### To-camera content
-
-Text goes here
++ [Animated educational video about the history of marriage in Australian law](https://vimeo.com/541914880?fl=pl&fe=cm)
++ [To-camera public information video about how petitions work](https://youtu.be/wDV3AZlBiLo)
 
 ### Social media content
-
-
-
-
-<h3>Legislative Assembly for the Australian Capital Territory</h3>
-<p align="center">
-  <img src="/images/NZIIA-logo.png" width="100px">
-  This image has words beneath it so I can explain what I have done
-</p>
-
-## 
