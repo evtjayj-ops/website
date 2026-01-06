@@ -2,6 +2,9 @@
 title: "Professional portfolio"
 description: "A selection of my professional work as an institutional engagement specialist over the past eight years."
 disableAnchoredHeadings: false
+_build:
+ list: false
+ render: false
 
 ---
 
