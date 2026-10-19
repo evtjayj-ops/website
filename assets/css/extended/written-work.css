@@ -1,11 +1,7 @@
 /* Written work index: one chronological list, grouped by year, newest first.
-   Each entry carries its own buttons (read, PDF, cite); there are no sub pages. */
+   Each entry is a white card on the site's grey and carries its own buttons
+   (read, PDF, cite); there are no sub pages. */
 /* Accent is --darkcolor (set in core/theme-vars.css). Fonts are the site's own. */
-
-/* The theme gives list pages a grey backdrop for its cards; drop it here. */
-body.list:has(.ww) {
-    background: var(--theme);
-}
 
 .ww {
     margin-top: calc(var(--gap) * 1.25);
@@ -15,13 +11,7 @@ body.list:has(.ww) {
     display: grid;
     grid-template-columns: 5rem 1fr;
     column-gap: var(--gap);
-    padding: calc(var(--gap) * 1.25) 0;
-    border-top: 1px solid var(--border);
-}
-
-.ww-year:first-child {
-    border-top: 0;
-    padding-top: 0;
+    padding-bottom: calc(var(--gap) * 1.1);
 }
 
 .ww-year-label {
@@ -32,6 +22,7 @@ body.list:has(.ww) {
     letter-spacing: 0.02em;
     color: var(--secondary);
     line-height: 1.9;
+    padding-top: 22px; /* lines up with the text inside the first card */
 }
 
 .ww-list {
@@ -40,8 +31,14 @@ body.list:has(.ww) {
     padding: 0;
 }
 
+.ww-item {
+    padding: 22px 24px;
+    background: var(--entry);
+    border-radius: 14px;
+}
+
 .ww-item + .ww-item {
-    margin-top: calc(var(--gap) * 1.5);
+    margin-top: 14px;
 }
 
 .ww-meta {
@@ -194,7 +191,13 @@ body.list:has(.ww) {
 @media (max-width: 640px) {
     .ww-year {
         grid-template-columns: 1fr;
-        row-gap: 10px;
+        row-gap: 0;
+    }
+    .ww-year-label {
+        padding: 0 4px 8px;
+    }
+    .ww-item {
+        padding: 18px 18px;
     }
     .ww-title {
         font-size: 20px;

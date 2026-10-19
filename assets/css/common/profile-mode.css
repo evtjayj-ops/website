@@ -48,3 +48,59 @@
 .button:focus-visible {
     background: var(--darkcolor-hover);
 }
+
+/* Icon inside a button (e.g. the email pill) */
+.button-icon {
+    display: inline-block;
+    margin-right: 6px;
+    vertical-align: -3px;
+}
+
+.button-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Photo beside the text on wide screens; stacked on narrow ones */
+.main .profile {
+    justify-content: center;
+}
+
+.profile .profile_inner {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    column-gap: 32px;
+    row-gap: 12px;
+    align-items: start;
+    max-width: 900px;
+}
+
+.profile .profile_inner img {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    width: 170px;
+    height: 170px;
+}
+
+.profile .profile_inner > *:not(img) {
+    grid-column: 2;
+}
+
+.profile .profile_inner h1 {
+    margin: 0;
+}
+
+@media (max-width: 640px) {
+    .profile .profile_inner {
+        grid-template-columns: 1fr;
+    }
+    .profile .profile_inner img,
+    .profile .profile_inner > *:not(img) {
+        grid-column: 1;
+        grid-row: auto;
+    }
+    .profile .profile_inner img {
+        width: 150px;
+        height: 150px;
+    }
+}

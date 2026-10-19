@@ -55,19 +55,11 @@ params:
     imageWidth: 150
     imageHeight: 150
     buttons:
-      - name: Written work
+      - name: Academic work
         url: written-work/
-      - name: PhD thesis
-        url: https://hdl.handle.net/1885/733750511
-      - name: Master's thesis
-        url: https://hdl.handle.net/1885/733713482
-  socialIcons:
-    - name: Email
-      url: mailto:hello@jaydenevett.cv
-    - name: LinkedIn
-      url: https://www.linkedin.com/in/jaydenevett/
-    - name: Google Scholar
-      url: https://scholar.google.com/citations?user=ah64k5kAAAAJ&hl
+      - name: Email
+        url: mailto:hello@jaydenevett.cv
+        icon: email
   assets:
     disableScrollBarStyle: true
   cover:
