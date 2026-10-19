@@ -107,8 +107,8 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 1.3;
-    color: var(--primary);
-    border: 1.5px solid var(--primary);
+    color: var(--secondary);
+    border: 1.5px solid color-mix(in srgb, var(--secondary) 45%, transparent);
     border-radius: var(--pill);
 }
 
