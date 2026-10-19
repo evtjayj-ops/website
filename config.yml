@@ -58,6 +58,7 @@ params:
   profileMode:
     enabled: true
     title: Dr Jayden Evett
+    pronouns: he/him/ia
     subtitle: Jay is an independent scholar working at the intersection of Aotearoa New Zealand’s diplomacy, history, and national identity. His work spans research and professional practice as an institutional engagement specialist, demystifying public institutions and empowering greater public participation.
     imageUrl: images/profilepicture.png
     imageWidth: 150
