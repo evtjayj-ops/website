@@ -107,7 +107,7 @@ body.list:has(.ww) {
 
 .ww-btn {
     display: inline-block;
-    padding: 5px 14px;
+    padding: 5px 16px;
     font: inherit;
     font-size: 14px;
     font-weight: var(--semibold);
@@ -115,7 +115,7 @@ body.list:has(.ww) {
     color: var(--darkcolor);
     background: transparent;
     border: 1.5px solid var(--darkcolor);
-    border-radius: 6px;
+    border-radius: var(--pill);
     cursor: pointer;
     text-decoration: none;
     transition: background-color 0.15s, color 0.15s;
@@ -172,14 +172,14 @@ body.list:has(.ww) {
 }
 
 .ww-copy {
-    padding: 3px 11px;
+    padding: 3px 13px;
     font: inherit;
     font-size: 13px;
     font-weight: var(--semibold);
     color: var(--darkcolor);
     background: var(--theme);
     border: 1px solid var(--tertiary);
-    border-radius: 5px;
+    border-radius: var(--pill);
     cursor: pointer;
 }
 

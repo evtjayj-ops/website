@@ -19,7 +19,7 @@
     font-size: 13px;
     line-height: 36px;
     background: var(--primary);
-    border-radius: calc(36px / 2);
+    border-radius: var(--pill);
     padding: 0 16px;
 }
 
@@ -64,7 +64,7 @@ pre {
     right: 4px;
     color: rgba(255, 255, 255, 0.8);
     background: rgba(78, 78, 78, 0.8);
-    border-radius: var(--radius);
+    border-radius: var(--pill);
     padding: 0 5px;
     font-size: 14px;
     user-select: none;
