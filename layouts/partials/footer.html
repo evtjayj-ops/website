@@ -1,23 +1,7 @@
-{{- if not (.Param "hideFooter") }}
+{{- if .IsHome }}
 <footer class="footer">
-    {{- if not site.Params.footer.hideCopyright }}
-    {{- if site.Copyright }}
-    <span>{{ site.Copyright | markdownify }}</span>
-    {{- else }}
-    <span>&copy; {{ now.Year }} {{ site.Title }}</span>
-    {{- end }}
-    {{- print " · "}}
-    {{- end }}
-
-    {{- with site.Params.footer.text }}
-    {{ . | markdownify }}
-    {{- print " · "}}
-    {{- end }}    
-    <span>
-    Powered by 
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">hugo</a>, <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">papermod</a>, &amp;
-        <a href="https://github.com/pmichaillat/hugo-website/" rel="noopener" target="_blank">hugo-website</a>.
-    </span>
+    <span>&copy; {{ now.Year }} {{ site.Title }}. All rights reserved.</span>
+    <span>Last updated {{ now.Format "January 2006" }}</span>
 </footer>
 {{- end }}
 

@@ -46,9 +46,10 @@
     transition: background-color 0.15s, color 0.15s, border-color 0.15s;
 }
 
-/* The page you are on: accent-blue outline and text, as in the header */
+/* The page you are on: filled accent blue, icon in the page colour */
 .button.current {
-    color: var(--darkcolor);
+    color: var(--code-bg);
+    background: var(--darkcolor);
     border-color: var(--darkcolor);
 }
 
@@ -152,4 +153,15 @@
         width: 150px;
         height: 150px;
     }
+}
+
+/* Front-page footer: two quiet centred lines on the grey */
+.footer {
+    background: transparent;
+    padding-top: 0;
+    padding-bottom: calc(var(--gap) * 1.25);
+}
+
+.footer span {
+    display: block;
 }
