@@ -30,11 +30,13 @@
       <li class="ww-item{{ if .Params.status }} ww-has-status{{ end }}" id="{{ $id }}" data-cat="{{ index $cats .Params.workType | default "other" }}">
         <p class="ww-meta">
           {{- with .Params.workType }}<span class="ww-type">{{ . }}</span>{{ end -}}
+          {{- if or .Params.book .Params.venue }}
           <span class="ww-venue">
             {{- if .Params.book }}In <em>{{ .Params.book }}</em>
             {{- else if eq .Params.workType "Article" }}<em>{{ .Params.venue }}</em>
             {{- else }}{{ .Params.venue }}{{ end -}}
           </span>
+          {{- end }}
           {{- with .Params.status }}<span class="ww-status">{{ . }}</span>{{ end }}
         </p>
         <h3 class="ww-title">{{ .Title }}</h3>
