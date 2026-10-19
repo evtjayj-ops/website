@@ -1,11 +1,9 @@
-{{- if .IsHome }}
 <footer class="footer">
     <span>&copy; <span id="footer-year">{{ now.Year }}</span> {{ site.Title }}</span>
     <span class="footer-sep" aria-hidden="true">|</span>
     <span>Updated {{ now.Format "January 2006" }}</span>
     <script>var y=document.getElementById('footer-year');if(y)y.textContent=new Date().getFullYear();</script>
 </footer>
-{{- end }}
 
 {{- if (not site.Params.disableScrollToTop) }}
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
