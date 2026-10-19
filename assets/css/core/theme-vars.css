@@ -3,9 +3,10 @@
     --content-gap: 20px;
     --nav-width: 1024px;
     --main-width: 720px;
-    --header-height: 44px;
+    --header-height: 68px;
     --footer-height: 70px;
     --radius: 8px;
+    --pill: 9999px; /* fully rounded buttons */
     --theme: rgb(255, 255, 255);
     --entry: rgb(255, 255, 255);
     --primary: rgb(30, 30, 30);
@@ -18,6 +19,7 @@
     --border: rgb(238, 238, 238);
     --darkcolor: #0072ee;
     --lightcolor: #80b8f6;
+    --darkcolor-hover: #0063cf; /* accent, about a tone darker, for hover */
     --semibold: 500;
     --homesize: 16px;
     --textsize: 18px;

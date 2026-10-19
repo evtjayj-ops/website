@@ -13,15 +13,17 @@ disableKinds:
   - term
 menu:
   main:
-    - name: Written work
+    - name: Academic work
       url: written-work/
       weight: 1
-    - name: PhD thesis
-      url: https://hdl.handle.net/1885/733750511
+    - name: Creative work
+      url: creative-work/
       weight: 2
-    - name: Master's thesis
-      url: https://hdl.handle.net/1885/733713482
+    - name: Email
+      url: mailto:hello@jaydenevett.cv
       weight: 3
+      params:
+        icon: email
 params:
   description: This website includes Jayden Evett's writing, including his theses, and contact information.
   author: Jayden Evett
@@ -55,28 +57,30 @@ params:
     imageWidth: 150
     imageHeight: 150
     buttons:
-      - name: Written work
+      - name: Academic work
         url: written-work/
-      - name: PhD thesis
-        url: https://hdl.handle.net/1885/733750511
-      - name: Master's thesis
-        url: https://hdl.handle.net/1885/733713482
-  socialIcons:
-    - name: Email
-      url: mailto:hello@jaydenevett.cv
-    - name: LinkedIn
-      url: https://www.linkedin.com/in/jaydenevett/
-    - name: Google Scholar
-      url: https://scholar.google.com/citations?user=ah64k5kAAAAJ&hl
+      - name: Creative work
+        url: creative-work/
+      - name: Email
+        url: mailto:hello@jaydenevett.cv
+        icon: email
   assets:
     disableScrollBarStyle: true
+    # The icon files live in static/images/. Without these paths the site asked for
+    # /favicon.ico etc. at the site root, which don't exist, so browsers kept an old cached icon.
+    favicon: images/favicon-bird.ico
+    favicon16x16: images/favicon-bird-16.png
+    favicon32x32: images/favicon-bird-32.png
+    apple_touch_icon: images/apple-touch-icon-bird.png
+    theme_color: "#f5f5f5"
+    msapplication_TileColor: "#f5f5f5"
   cover:
     hiddenInList: true
     hiddenInSingle: true
   label:
     text: Jayden Evett
-    icon: images/favicon.ico
-    iconHeight: 18
+    icon: images/bird-header.png
+    iconHeight: 24
 markup:
   goldmark:
     renderer:
