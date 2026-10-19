@@ -4,10 +4,10 @@
 </header>
 
 {{- /* Default label for the "read" button, by type. A piece can override it with linkLabel. */}}
-{{- $readLabels := dict "Article" "Read article" "Book chapter" "Read chapter" "PhD thesis" "Read thesis" "Master's thesis" "Read thesis" }}
+{{- $readLabels := dict "Article" "Read article" "Book chapter" "Read chapter" "PhD thesis" "Read thesis" "Master's thesis" "Read thesis" "Conference paper" "Read paper" }}
 
 {{- /* Filter chips, one per output type. A work type joins a chip by being listed in $cats. */}}
-{{- $cats := dict "Article" "articles" "Book chapter" "chapters" "PhD thesis" "theses" "Master's thesis" "theses" "Conference paper" "presentations" "Seminar" "presentations" "Lecture" "presentations" "Presentation" "presentations" }}
+{{- $cats := dict "Article" "articles" "Book chapter" "chapters" "PhD thesis" "theses" "Master's thesis" "theses" "Conference paper" "presentations" "Seminar" "presentations" "Guest lecture" "presentations" "Lecture" "presentations" "Presentation" "presentations" }}
 {{- $labels := dict "articles" "Articles" "chapters" "Book chapters" "theses" "Theses" "presentations" "Presentations" }}
 <div class="ww-filter" role="group" aria-label="Filter by type" hidden>
   <span class="ww-filter-label" aria-hidden="true">Filter by type:</span>
