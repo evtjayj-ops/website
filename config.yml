@@ -13,15 +13,17 @@ disableKinds:
   - term
 menu:
   main:
-    - name: Written work
+    - name: Academic work
       url: written-work/
       weight: 1
-    - name: PhD thesis
-      url: https://hdl.handle.net/1885/733750511
+    - name: Creative work
+      url: creative-work/
       weight: 2
-    - name: Master's thesis
-      url: https://hdl.handle.net/1885/733713482
+    - name: Email
+      url: mailto:hello@jaydenevett.cv
       weight: 3
+      params:
+        icon: email
 params:
   description: This website includes Jayden Evett's writing, including his theses, and contact information.
   author: Jayden Evett
@@ -57,17 +59,26 @@ params:
     buttons:
       - name: Academic work
         url: written-work/
+      - name: Creative work
+        url: creative-work/
       - name: Email
         url: mailto:hello@jaydenevett.cv
         icon: email
   assets:
     disableScrollBarStyle: true
+    # The icon files live in static/images/. Without these paths the site asked for
+    # /favicon.ico etc. at the site root, which don't exist, so browsers kept an old cached icon.
+    favicon: images/favicon.ico
+    favicon16x16: images/favicon-16x16.png
+    favicon32x32: images/favicon-32x32.png
+    apple_touch_icon: images/favicon-32x32.png
+    theme_color: "#0072ee"
+    msapplication_TileColor: "#0072ee"
   cover:
     hiddenInList: true
     hiddenInSingle: true
   label:
     text: Jayden Evett
-    icon: images/favicon.ico
     iconHeight: 18
 markup:
   goldmark:

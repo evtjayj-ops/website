@@ -1,5 +1,5 @@
 ---
-title: "Written work"
+title: "Academic work"
 layout: "written-work"
 
 # Each file in this folder is a data record for one piece of written work.
