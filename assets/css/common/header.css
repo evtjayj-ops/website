@@ -21,24 +21,38 @@
     margin: auto var(--gap);
 }
 
+/* The name sits on an accent-blue tab that comes out of the left edge of the page.
+   Its corners match the cards' radius. */
 .logo {
     flex-wrap: inherit;
+    margin-left: 0;
 }
 
 .logo a {
     display: flex;
     align-items: center;
-    color: var(--primary);
+    box-sizing: border-box;
+    height: 38px;
+    padding: 0 20px 0 18px;
+    color: #fff;
+    background: var(--darkcolor);
+    border-radius: 0 14px 14px 0;
     font-size: 18px;
     font-weight: 700;
+    line-height: 1;
+    transition: background-color 0.15s;
+}
+
+.logo a:hover {
+    background: var(--darkcolor-hover);
 }
 
 .logo a img, .logo a svg {
-    display: inline;
-    vertical-align: middle;
+    display: block;
     pointer-events: none;
+    height: 20px;
     width: auto;
-    margin-inline-end: 10px;
+    margin-inline-end: 7px;
 }
 
 button#theme-toggle {
@@ -148,7 +162,7 @@ body:not(.dark) #sun {
         flex-wrap: wrap;
         gap: 5px;
         margin-inline: 14px;
-        margin-top: 8px;
+        margin-top: 18px; /* room between the tab and the pills */
     }
     #menu li + li {
         margin-inline-start: 0;
