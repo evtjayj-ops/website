@@ -32,9 +32,9 @@
 }
 
 .button {
-    color: var(--darkcolor);
+    color: var(--primary);
     background: transparent;
-    border: 1.5px solid var(--darkcolor);
+    border: 1.5px solid var(--primary);
     border-radius: var(--pill);
     margin: 6px 12px 6px 0px;
     display: inline-flex;
@@ -43,7 +43,28 @@
     height: 44px;
     padding: 0 12.5px;
     line-height: 1;
-    transition: background-color 0.15s, color 0.15s;
+    transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+}
+
+/* The page you are on: accent-blue outline and text, as in the header */
+.button.current {
+    color: var(--darkcolor);
+    border-color: var(--darkcolor);
+}
+
+/* Round icon-only pill (Home) */
+.button.icon-only {
+    justify-content: center;
+    width: 44px;
+    padding: 0;
+}
+
+.button.icon-only .button-inner {
+    padding: 0;
+}
+
+.button.icon-only .button-icon {
+    margin-right: 0;
 }
 
 .button-inner {
@@ -54,8 +75,14 @@
 
 .button:hover,
 .button:focus-visible {
-    color: #fff;
+    color: var(--code-bg);
     background: var(--darkcolor);
+    border-color: var(--darkcolor);
+}
+
+.button:focus-visible {
+    outline: 2px solid var(--darkcolor);
+    outline-offset: 2px;
 }
 
 /* Icon inside a button (e.g. the email pill) */
