@@ -19,6 +19,7 @@
     --border: rgb(238, 238, 238);
     --darkcolor: #0072ee;
     --lightcolor: #80b8f6;
+    --darkcolor-hover: #0063cf; /* accent, about a tone darker, for hover */
     --semibold: 500;
     --homesize: 16px;
     --textsize: 18px;
