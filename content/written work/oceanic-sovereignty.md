@@ -1,5 +1,5 @@
 ---
-title: "Overstayers(?): The Shifting Place of Non-Pacific Scholars in Pacific Studies"
+title: "Overstayers(?): The shifting place of non-Pacific scholars in Pacific Studies"
 date: 2027-01-01
 publishDate: 2026-10-19
 anticipated: true
