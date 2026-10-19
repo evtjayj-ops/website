@@ -19,8 +19,9 @@
 .ww-filter-label {
     margin-right: 4px;
     font-size: 14px;
-    font-weight: var(--semibold);
-    color: var(--secondary);
+    font-weight: 500;
+    line-height: 1;
+    color: var(--primary);
 }
 
 .ww-empty {
@@ -256,4 +257,29 @@
     .ww-title {
         font-size: 20px;
     }
+}
+
+/* Work in progress: grey "In preparation" pill at the top right of the card, and a very
+   faint horizontal stripe across the card */
+.ww-ongoing {
+    position: relative;
+    background-image: repeating-linear-gradient(0deg, transparent 0 9px, rgba(0, 0, 0, 0.022) 9px 10px);
+}
+
+.ww-ongoing .ww-meta {
+    padding-right: 7.5rem; /* keep long venue names clear of the pill */
+}
+
+.ww-status {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    padding: 2px 11px;
+    font-size: 12px;
+    font-weight: var(--semibold);
+    line-height: 1.5;
+    color: var(--secondary);
+    background: var(--code-bg);
+    border: 1px solid var(--tertiary);
+    border-radius: var(--pill);
 }

@@ -9,8 +9,8 @@
 {{- /* Filter chips, one per output type. A work type joins a chip by being listed in $cats. */}}
 {{- $cats := dict "Article" "articles" "Book chapter" "chapters" "PhD thesis" "theses" "Master's thesis" "theses" "Conference paper" "presentations" "Seminar" "presentations" "Lecture" "presentations" "Presentation" "presentations" }}
 {{- $labels := dict "articles" "Articles" "chapters" "Book chapters" "theses" "Theses" "presentations" "Presentations" }}
-<div class="ww-filter" role="group" aria-label="Sort by type" hidden>
-  <span class="ww-filter-label" aria-hidden="true">Sort by type:</span>
+<div class="ww-filter" role="group" aria-label="Filter by type" hidden>
+  <span class="ww-filter-label" aria-hidden="true">Filter by type:</span>
   <button class="ww-chip" type="button" data-filter="all" aria-pressed="true">All</button>
   {{- range slice "articles" "chapters" "theses" "presentations" }}
   <button class="ww-chip" type="button" data-filter="{{ . }}" aria-pressed="false">{{ index $labels . }}</button>
@@ -18,14 +18,20 @@
 </div>
 
 <div class="ww">
-  {{- range .RegularPages.GroupByDate "2006" }}{{/* newest year first */}}
+  {{- /* Entries with a status (e.g. "In preparation") sit in an "Ongoing" group at the top; the rest are grouped by year, newest first. */}}
+  {{- $ongoing := where .RegularPages "Params.status" "ne" nil }}
+  {{- $done := where .RegularPages "Params.status" "eq" nil }}
+  {{- $groups := slice }}
+  {{- if $ongoing }}{{ $groups = $groups | append (dict "Key" "Ongoing" "Pages" $ongoing) }}{{ end }}
+  {{- range $done.GroupByDate "2006" }}{{ $groups = $groups | append (dict "Key" .Key "Pages" .Pages) }}{{ end }}
+  {{- range $groups }}
   <section class="ww-year">
     <h2 class="ww-year-label">{{ .Key }}</h2>
     <ol class="ww-list">
       {{- range .Pages }}
       {{- $p := . }}
       {{- $id := .File.ContentBaseName }}
-      <li class="ww-item" id="{{ $id }}" data-cat="{{ index $cats .Params.workType | default "other" }}">
+      <li class="ww-item{{ if .Params.status }} ww-ongoing{{ end }}" id="{{ $id }}" data-cat="{{ index $cats .Params.workType | default "other" }}">
         <p class="ww-meta">
           {{- with .Params.workType }}<span class="ww-type">{{ . }}</span>{{ end -}}
           <span class="ww-venue">
@@ -33,6 +39,7 @@
             {{- else if eq .Params.workType "Article" }}<em>{{ .Params.venue }}</em>
             {{- else }}{{ .Params.venue }}{{ end -}}
           </span>
+          {{- with .Params.status }}<span class="ww-status">{{ . }}</span>{{ end }}
         </p>
         <h3 class="ww-title">{{ .Title }}</h3>
         {{- with .Description }}<p class="ww-desc">{{ . }}</p>{{ end }}
@@ -41,6 +48,7 @@
         {{- with site.GetPage (printf "/written work/%s" $key) }}<p class="ww-note">Based on my <a href="#{{ $key }}">{{ .Params.workType }}</a></p>{{ end }}
         {{- end }}
 
+        {{- if or .Params.link .Params.pdf .Params.citation }}
         <div class="ww-actions">
           {{- with .Params.link }}
           <a class="ww-btn" href="{{ . }}" target="_blank" rel="noopener">
@@ -57,6 +65,7 @@
           <button class="ww-btn ww-cite-toggle" type="button" aria-expanded="false" aria-controls="cite-{{ $id }}">Cite</button>
           {{- end }}
         </div>
+        {{- end }}
 
         {{- if .Params.citation }}
         <div class="ww-panel" id="cite-{{ $id }}" hidden>
