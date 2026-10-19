@@ -64,6 +64,11 @@ params:
     imageWidth: 150
     imageHeight: 150
     buttons:
+      - name: Home
+        url: /
+        icon: home
+        iconOnly: true
+        current: true
       - name: Academic work
         url: written-work/
       - name: Creative work
