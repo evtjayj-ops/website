@@ -7,7 +7,7 @@
 {{- $readLabels := dict "Article" "Read article" "Book chapter" "Read chapter" "PhD thesis" "Read thesis" "Master's thesis" "Read thesis" "Conference paper" "Read paper" }}
 
 {{- /* Filter chips, one per output type. A work type joins a chip by being listed in $cats. */}}
-{{- $cats := dict "Article" "articles" "Book chapter" "chapters" "PhD thesis" "theses" "Master's thesis" "theses" "Conference paper" "presentations" "Seminar" "presentations" "Guest lecture" "presentations" "Lecture" "presentations" "Presentation" "presentations" }}
+{{- $cats := dict "Article" "articles" "Book chapter" "chapters" "PhD thesis" "theses" "Master's thesis" "theses" "Conference paper" "presentations" "Conference presentation" "presentations" "Seminar" "presentations" "Guest lecture" "presentations" "Lecture" "presentations" "Presentation" "presentations" }}
 {{- $labels := dict "articles" "Articles" "chapters" "Book chapters" "theses" "Theses" "presentations" "Presentations" }}
 <div class="ww-filter" role="group" aria-label="Filter by type" hidden>
   <span class="ww-filter-label" aria-hidden="true">Filter by type:</span>
@@ -57,7 +57,7 @@
           {{- with .Params.pdf }}
           {{- $size := (os.Stat (printf "static%s" .)).Size }}
           <a class="ww-btn" href="{{ . | relURL }}" target="_blank" rel="noopener">
-            PDF ({{ if lt $size 1048576 }}{{ printf "%.0f" (div (float $size) 1024) }} KB{{ else }}{{ printf "%.1f" (div (float $size) 1048576) }} MB{{ end }})</a>
+            {{ $p.Params.pdfLabel | default "PDF" }} ({{ if lt $size 1048576 }}{{ printf "%.0f" (div (float $size) 1024) }} KB{{ else }}{{ printf "%.1f" (div (float $size) 1048576) }} MB{{ end }})</a>
           {{- end }}
           {{- if .Params.citation }}
           <button class="ww-btn ww-cite-toggle" type="button" aria-expanded="false" aria-controls="cite-{{ $id }}">Cite</button>
