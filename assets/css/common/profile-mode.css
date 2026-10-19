@@ -163,5 +163,17 @@
 }
 
 .footer span {
-    display: block;
+    display: inline;
+}
+
+.footer-sep {
+    margin: 0 8px;
+}
+
+/* Desktop: all four buttons on one line */
+@media (min-width: 760px) {
+    .buttons {
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
 }
