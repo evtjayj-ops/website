@@ -121,6 +121,11 @@ body.list:has(.ww) {
     transition: background-color 0.15s, color 0.15s;
 }
 
+.ww-ext {
+    margin-left: 5px;
+    vertical-align: -1px;
+}
+
 .ww-btn:hover,
 .ww-btn:focus-visible,
 .ww-cite-toggle[aria-expanded="true"] {
