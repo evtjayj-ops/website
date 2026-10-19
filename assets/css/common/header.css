@@ -99,6 +99,32 @@ body:not(.dark) #sun {
     outline-offset: 3px;
 }
 
+/* Home: a round icon-only pill */
+#menu a.icon-only {
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+}
+
+#menu a.icon-only .menu-icon {
+    margin-right: 0;
+}
+
+#menu a.icon-only .menu-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
+
 .menu-icon {
     display: inline-flex;
     margin-right: 7px;
@@ -115,15 +141,24 @@ body:not(.dark) #sun {
     }
     #menu {
         flex-wrap: wrap;
-        gap: 8px;
+        gap: 5px;
+        margin-inline: 14px;
         margin-top: 8px;
     }
     #menu li + li {
         margin-inline-start: 0;
     }
     #menu a {
-        padding: 6px 14px;
-        font-size: 14px;
+        padding: 5px 9px;
+        font-size: 13.5px;
+    }
+    #menu a.icon-only {
+        width: 32px;
+        height: 32px;
+        padding: 0;
+    }
+    .menu-icon {
+        margin-right: 5px;
     }
 }
 

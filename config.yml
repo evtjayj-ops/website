@@ -13,15 +13,21 @@ disableKinds:
   - term
 menu:
   main:
+    - name: Home
+      url: /
+      weight: 1
+      params:
+        icon: home
+        iconOnly: true
     - name: Academic work
       url: written-work/
-      weight: 1
+      weight: 2
     - name: Creative work
       url: creative-work/
-      weight: 2
+      weight: 3
     - name: Email
       url: mailto:hello@jaydenevett.cv
-      weight: 3
+      weight: 4
       params:
         icon: email
 params:
