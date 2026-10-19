@@ -1,0 +1,22 @@
+/* Creative work page: grouped cards that reuse the Academic work card styles (.ww-item etc.) */
+.cw {
+    margin-top: calc(var(--gap) * 1.25);
+}
+
+.cw-group {
+    padding-bottom: calc(var(--gap) * 1.1);
+}
+
+.cw-heading {
+    margin: 0 0 10px;
+    font-size: var(--entrysize);
+    font-weight: var(--semibold);
+    letter-spacing: 0.02em;
+    color: var(--secondary);
+}
+
+.cw-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

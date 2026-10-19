@@ -1,0 +1,25 @@
+{{- define "main" }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+</header>
+
+<div class="cw">
+  {{- range .Params.groups }}
+  <section class="cw-group">
+    <h2 class="cw-heading">{{ .heading }}</h2>
+    <ul class="cw-list">
+      {{- range .items }}
+      <li class="ww-item">
+        <p class="ww-meta">
+          <span class="ww-type">{{ .type }}</span>
+          <span class="ww-venue">{{ .status }}</span>
+        </p>
+        <h3 class="ww-title">{{ .title }}</h3>
+        <p class="ww-desc">{{ .description }}</p>
+      </li>
+      {{- end }}
+    </ul>
+  </section>
+  {{- end }}
+</div>
+{{- end }}
