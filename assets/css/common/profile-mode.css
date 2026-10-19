@@ -32,12 +32,13 @@
 }
 
 .button {
-    color: #fff;
-    background: var(--darkcolor);
+    color: var(--darkcolor);
+    background: transparent;
+    border: 1.5px solid var(--darkcolor);
     border-radius: var(--pill);
     margin: 6px 12px 6px 0px;
-    padding: 10px 14px;
-    transition: background-color 0.15s;
+    padding: 8.5px 12.5px;
+    transition: background-color 0.15s, color 0.15s;
 }
 
 .button-inner {
@@ -46,7 +47,8 @@
 
 .button:hover,
 .button:focus-visible {
-    background: var(--darkcolor-hover);
+    color: #fff;
+    background: var(--darkcolor);
 }
 
 /* Icon inside a button (e.g. the email pill) */
