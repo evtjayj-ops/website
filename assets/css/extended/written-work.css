@@ -7,6 +7,47 @@
     margin-top: calc(var(--gap) * 1.25);
 }
 
+/* Filter by type: dark-grey outlined pills like the header; the chosen one is accent blue */
+.ww-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: calc(var(--gap) * 0.75);
+}
+
+.ww-chip {
+    box-sizing: border-box;
+    height: 34px;
+    padding: 0 16px;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--primary);
+    background: transparent;
+    border: 1.5px solid var(--primary);
+    border-radius: var(--pill);
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.ww-chip[aria-pressed="true"] {
+    color: var(--darkcolor);
+    border-color: var(--darkcolor);
+}
+
+.ww-chip:hover,
+.ww-chip:focus-visible {
+    color: var(--code-bg);
+    background: var(--darkcolor);
+    border-color: var(--darkcolor);
+}
+
+.ww-chip:focus-visible {
+    outline: 2px solid var(--darkcolor);
+    outline-offset: 2px;
+}
+
 .ww-year {
     display: grid;
     grid-template-columns: 5rem 1fr;

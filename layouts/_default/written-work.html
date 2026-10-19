@@ -6,6 +6,20 @@
 {{- /* Default label for the "read" button, by type. A piece can override it with linkLabel. */}}
 {{- $readLabels := dict "Article" "Read article" "Book chapter" "Read chapter" "PhD thesis" "Read thesis" "Master's thesis" "Read thesis" }}
 
+{{- /* Filter chips: one per output type that actually has entries. Add a work type to $cats to give it a chip. */}}
+{{- $cats := dict "Article" "articles" "Book chapter" "chapters" "PhD thesis" "theses" "Master's thesis" "theses" "Conference paper" "presentations" "Seminar" "presentations" "Lecture" "presentations" "Presentation" "presentations" }}
+{{- $labels := dict "articles" "Articles" "chapters" "Book chapters" "theses" "Theses" "presentations" "Presentations" }}
+{{- $present := slice }}
+{{- range .RegularPages }}{{ with index $cats .Params.workType }}{{ $present = $present | append . }}{{ end }}{{ end }}
+<div class="ww-filter" role="group" aria-label="Filter by type" hidden>
+  <button class="ww-chip" type="button" data-filter="all" aria-pressed="true">All</button>
+  {{- range slice "articles" "chapters" "theses" "presentations" }}
+  {{- if in $present . }}
+  <button class="ww-chip" type="button" data-filter="{{ . }}" aria-pressed="false">{{ index $labels . }}</button>
+  {{- end }}
+  {{- end }}
+</div>
+
 <div class="ww">
   {{- range .RegularPages.GroupByDate "2006" }}{{/* newest year first */}}
   <section class="ww-year">
@@ -14,7 +28,7 @@
       {{- range .Pages }}
       {{- $p := . }}
       {{- $id := .File.ContentBaseName }}
-      <li class="ww-item" id="{{ $id }}">
+      <li class="ww-item" id="{{ $id }}" data-cat="{{ index $cats .Params.workType | default "other" }}">
         <p class="ww-meta">
           {{- with .Params.workType }}<span class="ww-type">{{ . }}</span>{{ end -}}
           <span class="ww-venue">
@@ -69,6 +83,24 @@
 <noscript><style>.ww-panel[hidden]{display:block}.ww-cite-toggle,.ww-copy{display:none}</style></noscript>
 <script>
 (function () {
+  var bar = document.querySelector('.ww-filter');
+  if (bar) {
+    bar.hidden = false;
+    var items = document.querySelectorAll('.ww-item');
+    var groups = document.querySelectorAll('.ww-year');
+    bar.querySelectorAll('.ww-chip').forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        var f = chip.dataset.filter;
+        bar.querySelectorAll('.ww-chip').forEach(function (c) {
+          c.setAttribute('aria-pressed', String(c === chip));
+        });
+        items.forEach(function (li) { li.hidden = !(f === 'all' || li.dataset.cat === f); });
+        groups.forEach(function (g) {
+          g.hidden = !g.querySelector('.ww-item:not([hidden])');
+        });
+      });
+    });
+  }
   document.querySelectorAll('.ww-cite-toggle').forEach(function (btn) {
     btn.addEventListener('click', function () {
       var panel = document.getElementById(btn.getAttribute('aria-controls'));
