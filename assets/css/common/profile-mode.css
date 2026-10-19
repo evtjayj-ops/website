@@ -37,11 +37,18 @@
     border: 1.5px solid var(--darkcolor);
     border-radius: var(--pill);
     margin: 6px 12px 6px 0px;
-    padding: 8.5px 12.5px;
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
+    height: 44px;
+    padding: 0 12.5px;
+    line-height: 1;
     transition: background-color 0.15s, color 0.15s;
 }
 
 .button-inner {
+    display: inline-flex;
+    align-items: center;
     padding: 0 8px;
 }
 
@@ -53,12 +60,13 @@
 
 /* Icon inside a button (e.g. the email pill) */
 .button-icon {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     margin-right: 6px;
-    vertical-align: -3px;
 }
 
 .button-icon svg {
+    display: block;
     width: 18px;
     height: 18px;
 }

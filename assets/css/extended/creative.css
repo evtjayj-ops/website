@@ -8,6 +8,9 @@
 }
 
 .cw-heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     margin: 0 0 10px;
     font-size: var(--entrysize);
     font-weight: var(--semibold);
@@ -19,4 +22,32 @@
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.cw-icon {
+    display: inline-flex;
+    color: var(--secondary);
+}
+
+.cw-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+.cw-year {
+    margin-left: 0.6em;
+    padding-left: 0.7em;
+    border-left: 1px solid var(--tertiary);
+    font-size: 13px;
+    font-weight: var(--semibold);
+    color: var(--secondary);
+}
+
+/* Descriptions can have several paragraphs */
+.cw-desc p {
+    margin: 0;
+}
+
+.cw-desc p + p {
+    margin-top: 0.7em;
 }

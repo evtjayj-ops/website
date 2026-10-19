@@ -6,16 +6,16 @@
 <div class="cw">
   {{- range .Params.groups }}
   <section class="cw-group">
-    <h2 class="cw-heading">{{ .heading }}</h2>
+    <h2 class="cw-heading">{{ with .icon }}<span class="cw-icon" aria-hidden="true">{{ partial "svg.html" (dict "name" .) }}</span>{{ end }}{{ .heading }}</h2>
     <ul class="cw-list">
       {{- range .items }}
       <li class="ww-item">
         <p class="ww-meta">
           <span class="ww-type">{{ .type }}</span>
-          <span class="ww-venue">{{ .status }}</span>
+          <span class="ww-venue">{{ .status }}</span>{{ with .year }} <span class="cw-year">{{ . }}</span>{{ end }}
         </p>
-        <h3 class="ww-title">{{ .title }}</h3>
-        <p class="ww-desc">{{ .description }}</p>
+        <h3 class="ww-title">{{ .title | markdownify }}</h3>
+        <div class="ww-desc cw-desc">{{ .description | markdownify }}</div>
       </li>
       {{- end }}
     </ul>
