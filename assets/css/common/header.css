@@ -43,6 +43,17 @@
     transition: background-color 0.15s;
 }
 
+.logo-text {
+    /* trim the text box to the capital height so it centres in the tab whatever the font's metrics */
+    text-box: trim-both cap alphabetic;
+}
+
+@supports not (text-box: trim-both cap alphabetic) {
+    .logo-text {
+        padding-top: 0.08em;
+    }
+}
+
 .logo a:hover {
     background: var(--darkcolor-hover);
 }
