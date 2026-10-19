@@ -7,6 +7,61 @@
     margin-top: calc(var(--gap) * 1.25);
 }
 
+/* Filter by type: dark-grey outlined pills like the header; the chosen one is accent blue */
+.ww-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: calc(var(--gap) * 0.75);
+    align-items: center;
+}
+
+.ww-filter-label {
+    margin-right: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--primary);
+}
+
+.ww-empty {
+    margin: calc(var(--gap) * 1.25) 0;
+    color: var(--secondary);
+}
+
+.ww-chip {
+    box-sizing: border-box;
+    height: 34px;
+    padding: 0 16px;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--primary);
+    background: transparent;
+    border: 1.5px solid var(--primary);
+    border-radius: var(--pill);
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.ww-chip[aria-pressed="true"] {
+    color: var(--darkcolor);
+    border-color: var(--darkcolor);
+}
+
+.ww-chip:hover,
+.ww-chip:focus-visible {
+    color: var(--code-bg);
+    background: var(--darkcolor);
+    border-color: var(--darkcolor);
+}
+
+.ww-chip:focus-visible {
+    outline: 2px solid var(--darkcolor);
+    outline-offset: 2px;
+}
+
 .ww-year {
     display: grid;
     grid-template-columns: 5rem 1fr;
@@ -56,6 +111,12 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--secondary);
+}
+
+.ww-type:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
 }
 
 .ww-venue {
@@ -202,4 +263,35 @@
     .ww-title {
         font-size: 20px;
     }
+}
+
+/* Work in progress: grey pill at the top right of the card (front matter: status) */
+.ww-has-status {
+    position: relative;
+}
+
+.ww-has-status .ww-meta {
+    padding-right: 7.5rem; /* keep long venue names clear of the pill */
+}
+
+.ww-status {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    padding: 2px 11px;
+    font-size: 12px;
+    font-weight: var(--semibold);
+    line-height: 1.5;
+    color: var(--secondary);
+    background: var(--code-bg);
+    border: 1px solid var(--tertiary);
+    border-radius: var(--pill);
+}
+
+.ww-year-note {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.3;
 }

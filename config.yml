@@ -13,15 +13,21 @@ disableKinds:
   - term
 menu:
   main:
+    - name: Home
+      url: /
+      weight: 1
+      params:
+        icon: home
+        iconOnly: true
     - name: Academic work
       url: written-work/
-      weight: 1
+      weight: 2
     - name: Creative work
       url: creative-work/
-      weight: 2
+      weight: 3
     - name: Email
       url: mailto:hello@jaydenevett.cv
-      weight: 3
+      weight: 4
       params:
         icon: email
 params:
@@ -52,6 +58,7 @@ params:
   profileMode:
     enabled: true
     title: Dr Jayden Evett
+    pronouns: he/him/ia
     subtitle: Jay is an independent scholar working at the intersection of Aotearoa New Zealand’s diplomacy, history, and national identity. His work spans research and professional practice as an institutional engagement specialist, demystifying public institutions and empowering greater public participation.
     imageUrl: images/profilepicture.png
     imageWidth: 150
@@ -79,8 +86,8 @@ params:
     hiddenInSingle: true
   label:
     text: Jayden Evett
-    icon: images/bird-header.png
-    iconHeight: 24
+    icon: images/bird-header-white.png
+    iconHeight: 20
 markup:
   goldmark:
     renderer:

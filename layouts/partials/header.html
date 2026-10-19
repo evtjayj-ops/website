@@ -71,7 +71,7 @@
                 {{- else if hasPrefix site.Params.label.iconSVG "<svg" }}
                     {{ site.Params.label.iconSVG | safeHTML }}
                 {{- end -}}
-                {{- $label_text -}}
+                <span class="logo-text">{{ $label_text }}</span>
             </a>
             {{- end }}
             <div class="logo-switches">
@@ -130,9 +130,9 @@
             <li>
                 <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
                 {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}
-                {{- if eq $menu_item_url $page_url }} class="active" aria-current="page"{{ end }}>
+                {{- if .Params.iconOnly }} class="icon-only{{ if eq $menu_item_url $page_url }} active{{ end }}" aria-label="{{ .Name }}"{{ else if eq $menu_item_url $page_url }} class="active" aria-current="page"{{ end }}>
                     {{- with .Params.icon }}<span class="menu-icon">{{ partial "svg.html" (dict "name" .) }}</span>{{ end }}
-                    <span>
+                    <span{{ if .Params.iconOnly }} class="visually-hidden"{{ end }}>
                         {{- .Pre }}
                         {{- .Name -}}
                         {{ .Post -}}

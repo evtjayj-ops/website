@@ -31,6 +31,7 @@
         {{- end }}
         {{- end }}
         <h1>{{ .title | default site.Title | markdownify }}</h1>
+        {{- with .pronouns }}<p class="profile-pronouns">{{ . }}</p>{{ end }}
         <span>{{ .subtitle | markdownify }}</span>
 
         {{- with .buttons }}
