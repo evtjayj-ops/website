@@ -68,18 +68,19 @@ params:
     disableScrollBarStyle: true
     # The icon files live in static/images/. Without these paths the site asked for
     # /favicon.ico etc. at the site root, which don't exist, so browsers kept an old cached icon.
-    favicon: images/favicon.ico
-    favicon16x16: images/favicon-16x16.png
-    favicon32x32: images/favicon-32x32.png
-    apple_touch_icon: images/favicon-32x32.png
-    theme_color: "#0072ee"
-    msapplication_TileColor: "#0072ee"
+    favicon: images/favicon-bird.ico
+    favicon16x16: images/favicon-bird-16.png
+    favicon32x32: images/favicon-bird-32.png
+    apple_touch_icon: images/apple-touch-icon-bird.png
+    theme_color: "#f5f5f5"
+    msapplication_TileColor: "#f5f5f5"
   cover:
     hiddenInList: true
     hiddenInSingle: true
   label:
     text: Jayden Evett
-    iconHeight: 18
+    icon: images/bird-header.png
+    iconHeight: 24
 markup:
   goldmark:
     renderer:
