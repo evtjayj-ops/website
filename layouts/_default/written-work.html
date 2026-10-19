@@ -1,0 +1,98 @@
+{{- define "main" }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+</header>
+
+{{- /* Default label for the "read" button, by type. A piece can override it with linkLabel. */}}
+{{- $readLabels := dict "Article" "Read article" "Book chapter" "Read chapter" "PhD thesis" "Read thesis" "Master's thesis" "Read thesis" }}
+
+<div class="ww">
+  {{- range .RegularPages.GroupByDate "2006" }}{{/* newest year first */}}
+  <section class="ww-year">
+    <h2 class="ww-year-label">{{ .Key }}</h2>
+    <ol class="ww-list">
+      {{- range .Pages }}
+      {{- $p := . }}
+      {{- $id := .File.ContentBaseName }}
+      <li class="ww-item" id="{{ $id }}">
+        <p class="ww-meta">
+          {{- with .Params.workType }}<span class="ww-type">{{ . }}</span>{{ end -}}
+          <span class="ww-venue">
+            {{- if .Params.book }}In <em>{{ .Params.book }}</em>
+            {{- else if eq .Params.workType "Article" }}<em>{{ .Params.venue }}</em>
+            {{- else }}{{ .Params.venue }}{{ end -}}
+          </span>
+        </p>
+        <h3 class="ww-title">{{ .Title }}</h3>
+        {{- with .Description }}<p class="ww-desc">{{ . }}</p>{{ end }}
+        {{- with .Params.basedOn }}
+        {{- $key := . }}
+        {{- with site.GetPage (printf "/written work/%s" $key) }}<p class="ww-note">Based on my <a href="#{{ $key }}">{{ .Params.workType }}</a></p>{{ end }}
+        {{- end }}
+
+        <div class="ww-actions">
+          {{- with .Params.link }}
+          <a class="ww-btn" href="{{ . }}" target="_blank" rel="noopener">
+            {{- $p.Params.linkLabel | default (index $readLabels $p.Params.workType) | default "Read" }} <span aria-hidden="true">&#8599;</span></a>
+          {{- end }}
+          {{- with .Params.pdf }}
+          {{- $size := (os.Stat (printf "static%s" .)).Size }}
+          <a class="ww-btn" href="{{ . | relURL }}" target="_blank" rel="noopener">
+            PDF ({{ if lt $size 1048576 }}{{ printf "%.0f" (div (float $size) 1024) }} KB{{ else }}{{ printf "%.1f" (div (float $size) 1048576) }} MB{{ end }})</a>
+          {{- end }}
+          {{- if .Params.citation }}
+          <button class="ww-btn ww-cite-toggle" type="button" aria-expanded="false" aria-controls="cite-{{ $id }}">Cite</button>
+          {{- end }}
+        </div>
+
+        {{- if .Params.citation }}
+        <div class="ww-panel" id="cite-{{ $id }}" hidden>
+          <div class="ww-citation" id="citetext-{{ $id }}">{{ .Params.citation | markdownify }}</div>
+          <div class="ww-panel-actions">
+            <button class="ww-copy" type="button" data-copy="citetext-{{ $id }}">Copy citation</button>
+            {{- with .Params.bibtex }}
+            <button class="ww-copy" type="button" data-copy="bib-{{ $id }}">Copy BibTeX</button>
+            <pre class="ww-bibtex" id="bib-{{ $id }}" hidden>{{ . }}</pre>
+            {{- end }}
+          </div>
+        </div>
+        {{- end }}
+      </li>
+      {{- end }}
+    </ol>
+  </section>
+  {{- end }}
+</div>
+
+<noscript><style>.ww-panel[hidden]{display:block}.ww-cite-toggle,.ww-copy{display:none}</style></noscript>
+<script>
+(function () {
+  document.querySelectorAll('.ww-cite-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var panel = document.getElementById(btn.getAttribute('aria-controls'));
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      panel.hidden = open;
+    });
+  });
+  document.querySelectorAll('.ww-copy').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var el = document.getElementById(btn.dataset.copy);
+      var text = el.textContent.trim().replace(/[ \t]+\n/g, '\n');
+      var done = function () {
+        var old = btn.textContent; btn.textContent = 'Copied';
+        setTimeout(function () { btn.textContent = old; }, 1600);
+      };
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(done);
+      } else {
+        var ta = document.createElement('textarea'); ta.value = text;
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); done(); } catch (e) {}
+        document.body.removeChild(ta);
+      }
+    });
+  });
+})();
+</script>
+{{- end }}

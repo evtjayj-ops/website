@@ -1,0 +1,197 @@
+/* Written work index: one chronological list, grouped by year, newest first.
+   Each entry carries its own buttons (read, PDF, cite); there are no sub pages. */
+/* Accent is --darkcolor (set in core/theme-vars.css). Fonts are the site's own. */
+
+/* The theme gives list pages a grey backdrop for its cards; drop it here. */
+body.list:has(.ww) {
+    background: var(--theme);
+}
+
+.ww {
+    margin-top: calc(var(--gap) * 1.25);
+}
+
+.ww-year {
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    column-gap: var(--gap);
+    padding: calc(var(--gap) * 1.25) 0;
+    border-top: 1px solid var(--border);
+}
+
+.ww-year:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.ww-year-label {
+    margin: 0;
+    font-size: var(--entrysize);
+    font-weight: var(--semibold);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
+    color: var(--secondary);
+    line-height: 1.9;
+}
+
+.ww-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ww-item + .ww-item {
+    margin-top: calc(var(--gap) * 1.5);
+}
+
+.ww-meta {
+    margin: 0 0 6px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.ww-type {
+    margin-right: 0.6em;
+    padding-right: 0.7em;
+    border-right: 1px solid var(--tertiary);
+    font-size: 12px;
+    font-weight: var(--semibold);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--secondary);
+}
+
+.ww-venue {
+    font-weight: var(--semibold);
+    color: var(--darkcolor);
+}
+
+.ww-venue em {
+    font-style: italic;
+}
+
+.ww-title {
+    margin: 0;
+    font-size: 21px;
+    font-weight: var(--semibold);
+    line-height: 1.3;
+}
+
+.ww-desc {
+    margin: 8px 0 0;
+    font-size: var(--entrysize);
+    line-height: var(--lineheight);
+    color: var(--secondary);
+}
+
+
+.ww-note {
+    margin: 6px 0 0;
+    font-size: var(--entrysize);
+    color: var(--secondary);
+}
+
+.ww-note a {
+    color: var(--darkcolor);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* Outlined buttons: read, PDF, cite */
+.ww-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.ww-btn {
+    display: inline-block;
+    padding: 5px 14px;
+    font: inherit;
+    font-size: 14px;
+    font-weight: var(--semibold);
+    line-height: 1.5;
+    color: var(--darkcolor);
+    background: transparent;
+    border: 1.5px solid var(--darkcolor);
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.ww-btn:hover,
+.ww-btn:focus-visible,
+.ww-cite-toggle[aria-expanded="true"] {
+    color: #fff;
+    background: var(--darkcolor);
+}
+
+.ww-btn:focus-visible,
+.ww-copy:focus-visible {
+    outline: 2px solid var(--darkcolor);
+    outline-offset: 2px;
+}
+
+/* Citation panel */
+.ww-panel {
+    margin-top: 12px;
+    padding: 14px 16px;
+    background: var(--code-bg);
+    border-radius: var(--radius);
+}
+
+.ww-citation {
+    font-size: 14.5px;
+    line-height: 1.55;
+    color: var(--primary);
+    overflow-wrap: anywhere;
+}
+
+.ww-citation p {
+    margin: 0;
+}
+
+.ww-citation a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.ww-panel-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.ww-copy {
+    padding: 3px 11px;
+    font: inherit;
+    font-size: 13px;
+    font-weight: var(--semibold);
+    color: var(--darkcolor);
+    background: var(--theme);
+    border: 1px solid var(--tertiary);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ww-copy:hover {
+    border-color: var(--darkcolor);
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 640px) {
+    .ww-year {
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+    .ww-title {
+        font-size: 20px;
+    }
+}

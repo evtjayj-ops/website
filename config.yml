@@ -7,8 +7,10 @@ enableInlineShortcodes: true
 enableRobotsTXT: true
 pagination:
   pagerSize: 20
-taxonomies:
-  tag: tags
+# The tag and archive pages listed individual pieces that no longer have pages.
+disableKinds:
+  - taxonomy
+  - term
 menu:
   main:
     - name: Written work
