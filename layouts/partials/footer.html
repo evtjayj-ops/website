@@ -2,7 +2,7 @@
 <footer class="footer">
     <span>&copy; <span id="footer-year">{{ now.Year }}</span> {{ site.Title }}</span>
     <span class="footer-sep" aria-hidden="true">|</span>
-    <span>Last updated {{ now.Format "January 2006" }}</span>
+    <span>Updated {{ now.Format "January 2006" }}</span>
     <script>var y=document.getElementById('footer-year');if(y)y.textContent=new Date().getFullYear();</script>
 </footer>
 {{- end }}
