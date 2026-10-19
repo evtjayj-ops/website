@@ -259,14 +259,12 @@
     }
 }
 
-/* Work in progress: grey "In preparation" pill at the top right of the card, and a very
-   faint horizontal stripe across the card */
-.ww-ongoing {
+/* Work in progress: grey pill at the top right of the card (front matter: status) */
+.ww-has-status {
     position: relative;
-    background-image: repeating-linear-gradient(0deg, transparent 0 9px, rgba(0, 0, 0, 0.022) 9px 10px);
 }
 
-.ww-ongoing .ww-meta {
+.ww-has-status .ww-meta {
     padding-right: 7.5rem; /* keep long venue names clear of the pill */
 }
 
@@ -282,4 +280,12 @@
     background: var(--code-bg);
     border: 1px solid var(--tertiary);
     border-radius: var(--pill);
+}
+
+.ww-year-note {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.3;
 }

@@ -18,20 +18,16 @@
 </div>
 
 <div class="ww">
-  {{- /* Entries with a status (e.g. "In preparation") sit in an "Ongoing" group at the top; the rest are grouped by year, newest first. */}}
-  {{- $ongoing := where .RegularPages "Params.status" "ne" nil }}
-  {{- $done := where .RegularPages "Params.status" "eq" nil }}
-  {{- $groups := slice }}
-  {{- if $ongoing }}{{ $groups = $groups | append (dict "Key" "Ongoing" "Pages" $ongoing) }}{{ end }}
-  {{- range $done.GroupByDate "2006" }}{{ $groups = $groups | append (dict "Key" .Key "Pages" .Pages) }}{{ end }}
-  {{- range $groups }}
+  {{- range .RegularPages.GroupByDate "2006" }}{{/* newest year first */}}
   <section class="ww-year">
-    <h2 class="ww-year-label">{{ .Key }}</h2>
+    <h2 class="ww-year-label">{{ .Key }}
+      {{- $anticipated := false }}{{ range .Pages }}{{ if .Params.anticipated }}{{ $anticipated = true }}{{ end }}{{ end }}
+      {{- if $anticipated }}<span class="ww-year-note">(anticipated)</span>{{ end }}</h2>
     <ol class="ww-list">
       {{- range .Pages }}
       {{- $p := . }}
       {{- $id := .File.ContentBaseName }}
-      <li class="ww-item{{ if .Params.status }} ww-ongoing{{ end }}" id="{{ $id }}" data-cat="{{ index $cats .Params.workType | default "other" }}">
+      <li class="ww-item{{ if .Params.status }} ww-has-status{{ end }}" id="{{ $id }}" data-cat="{{ index $cats .Params.workType | default "other" }}">
         <p class="ww-meta">
           {{- with .Params.workType }}<span class="ww-type">{{ . }}</span>{{ end -}}
           <span class="ww-venue">
