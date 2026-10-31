@@ -206,7 +206,7 @@ body:not(.dark) #sun {
     box-sizing: border-box;
     min-height: 0;
     padding: 9px 16px;
-    background: color-mix(in srgb, var(--darkcolor) 14%, var(--code-bg));
+    background: color-mix(in srgb, var(--darkcolor) 28%, var(--code-bg));
     border-radius: 0 0 14px 14px;
 }
 
