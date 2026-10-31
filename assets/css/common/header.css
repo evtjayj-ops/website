@@ -215,3 +215,74 @@ body:not(.dark) #sun {
 .logo-switches {
     flex-wrap: inherit;
 }
+
+/* ---- Header as a blue tab hanging from the top of the page ----
+   The bar is as wide as the content column, runs up to the very top edge,
+   and is rounded only at the bottom, so it reads as coming down out of the page. */
+.header {
+    box-sizing: border-box;
+    max-width: calc(var(--main-width) + var(--gap) * 2);
+    margin: 0 auto;
+    padding: 0 var(--gap);
+    background: transparent;
+}
+
+.nav {
+    box-sizing: border-box;
+    min-height: 0;
+    padding: 9px 16px;
+    background: var(--darkcolor);
+    border-radius: 0 0 14px 14px;
+}
+
+.logo,
+#menu {
+    margin: 0;
+}
+
+.logo a {
+    height: 38px;
+    padding: 0;
+    color: #fff;
+    background: transparent;
+    border-radius: 0;
+    transition: opacity 0.15s;
+}
+
+.logo a:hover {
+    background: transparent;
+    opacity: 0.85;
+}
+
+#menu a {
+    color: #fff;
+    border-color: #fff;
+}
+
+#menu a.active,
+#menu a:hover,
+#menu a:focus-visible {
+    color: var(--darkcolor);
+    background: #fff;
+    border-color: #fff;
+}
+
+#menu a:focus-visible,
+.logo a:focus-visible {
+    outline-color: #fff;
+}
+
+@media (max-width: 760px) {
+    /* on narrow screens the tab runs the full width */
+    .header {
+        padding: 0;
+    }
+    .nav {
+        border-radius: 0 0 14px 14px;
+        padding: 12px 14px 12px;
+    }
+    #menu {
+        margin-inline: 0;
+        margin-top: 14px;
+    }
+}
