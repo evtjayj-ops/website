@@ -19,10 +19,10 @@ menu:
       params:
         icon: home
         iconOnly: true
-    - name: Academic work
+    - name: Academic
       url: written-work/
       weight: 2
-    - name: Creative work
+    - name: Creative
       url: creative-work/
       weight: 3
     - name: Email

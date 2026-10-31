@@ -165,35 +165,6 @@ body:not(.dark) #sun {
     height: 16px;
 }
 
-@media (max-width: 640px) {
-    .nav {
-        padding: 10px 0;
-    }
-    #menu {
-        flex-wrap: wrap;
-        gap: 5px;
-        margin-inline: 14px;
-        margin-top: 18px; /* room between the tab and the pills */
-    }
-    #menu li + li {
-        margin-inline-start: 0;
-    }
-    #menu a {
-        height: 32px;
-        padding: 0 9px;
-        /* whole-pixel font and line height keep the text vertically centred in the pill */
-        font-size: 14px;
-        line-height: 15px;
-    }
-    #menu a.icon-only {
-        width: 32px;
-        padding: 0;
-    }
-    .menu-icon {
-        margin-right: 5px;
-    }
-}
-
 .lang-switch li,
 .lang-switch ul,
 .logo-switches {
@@ -214,4 +185,176 @@ body:not(.dark) #sun {
 
 .logo-switches {
     flex-wrap: inherit;
+}
+
+/* ---- Header as an accent-blue tab hanging from the top of the page ----
+   The bar is as wide as the content column, runs up to the very top edge,
+   and is rounded only at the bottom, so it reads as coming down out of the page.
+   White bird, name and outlined pills; hover and the current page are solid white with blue text. */
+.header {
+    position: relative;
+    z-index: 10;
+    box-sizing: border-box;
+    max-width: calc(var(--main-width) + var(--gap) * 2);
+    margin: 0 auto;
+    padding: 0 var(--gap);
+    background: transparent;
+}
+
+.nav {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 0;
+    padding: 9px 16px;
+    background: var(--darkcolor);
+    border-radius: 0 0 14px 14px;
+}
+
+.logo,
+#menu {
+    margin: 0;
+}
+
+.logo a {
+    height: 38px;
+    padding: 0;
+    color: #fff;
+    background: transparent;
+    border-radius: 0;
+    transition: opacity 0.15s;
+}
+
+.logo a:hover {
+    background: transparent;
+    opacity: 0.75;
+}
+
+/* White pills on the blue bar; current page and hover are solid white with blue text */
+#menu a {
+    color: #fff;
+    border-color: #fff;
+}
+
+#menu a.active,
+#menu a:hover,
+#menu a:focus-visible {
+    color: var(--darkcolor);
+    background: #fff;
+    border-color: #fff;
+}
+
+#menu a:focus-visible,
+.logo a:focus-visible {
+    outline-color: #fff;
+}
+
+/* Phone controls are hidden on desktop */
+.mobile-nav,
+.menu-panel {
+    display: none;
+}
+
+@media (max-width: 760px) {
+    /* phones: the tab runs the full width, square, with three round buttons */
+    .header {
+        padding: 0;
+    }
+    .nav {
+        flex-wrap: nowrap;
+        border-radius: 0;
+        padding: 9px 14px;
+    }
+    #menu {
+        display: none;
+    }
+    .mobile-nav {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .mobile-nav .round-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 38px;
+        height: 38px;
+        padding: 0;
+        color: #fff;
+        background: transparent;
+        border: 1.5px solid #fff;
+        border-radius: 50%;
+        cursor: pointer;
+        font: inherit;
+        transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+    }
+    .mobile-nav .round-btn.active,
+    .mobile-nav .round-btn:hover,
+    .mobile-nav .round-btn:focus-visible,
+    .mobile-nav .round-btn[aria-expanded="true"] {
+        color: var(--darkcolor);
+        background: #fff;
+        border-color: #fff;
+    }
+    .mobile-nav .round-btn:focus-visible {
+        outline: 2px solid #fff;
+        outline-offset: 2px;
+    }
+    .mobile-nav .round-btn .menu-icon {
+        margin: 0;
+    }
+    .mobile-nav .round-btn svg {
+        display: block;
+        width: 18px;
+        height: 18px;
+    }
+    .mobile-nav .round-btn .icon-close,
+    .mobile-nav .round-btn[aria-expanded="true"] .icon-open {
+        display: none;
+    }
+    .mobile-nav .round-btn[aria-expanded="true"] .icon-close {
+        display: block;
+    }
+    /* the header grows: a white band under the blue bar holds Academic and Creative */
+    .nav {
+        flex-wrap: wrap;
+    }
+    .menu-panel {
+        display: flex;
+        flex: 0 0 calc(100% + 28px);
+        box-sizing: border-box;
+        justify-content: flex-end;
+        gap: 8px;
+        margin: 9px -14px -9px;
+        padding: 12px 14px;
+        list-style: none;
+        background: #fff;
+    }
+    .menu-panel[hidden] {
+        display: none;
+    }
+    .menu-panel a {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        height: 38px;
+        padding: 0 18px;
+        color: var(--primary);
+        border: 1.5px solid var(--primary);
+        border-radius: var(--pill);
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1;
+        transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+    }
+    .menu-panel a.active {
+        color: var(--darkcolor);
+        border-color: var(--darkcolor);
+    }
+    .menu-panel a:hover,
+    .menu-panel a:focus-visible {
+        color: var(--code-bg);
+        background: var(--darkcolor);
+        border-color: var(--darkcolor);
+    }
 }
