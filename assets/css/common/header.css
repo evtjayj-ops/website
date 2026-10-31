@@ -249,7 +249,8 @@ body:not(.dark) #sun {
 }
 
 /* Phone controls are hidden on desktop */
-.mobile-nav {
+.mobile-nav,
+.menu-panel {
     display: none;
 }
 
@@ -314,24 +315,22 @@ body:not(.dark) #sun {
     .mobile-nav .round-btn[aria-expanded="true"] .icon-close {
         display: block;
     }
-    /* dropdown under the bar */
+    /* the header grows: a white band under the blue bar holds Academic and Creative */
+    .nav {
+        flex-wrap: wrap;
+    }
     .menu-panel {
-        position: absolute;
-        top: calc(100% + 8px);
-        right: 14px;
-        min-width: 190px;
-        margin: 0;
-        padding: 8px;
+        display: flex;
+        flex: 0 0 calc(100% + 28px);
+        box-sizing: border-box;
+        gap: 8px;
+        margin: 9px -14px -9px;
+        padding: 12px 14px;
         list-style: none;
-        background: var(--entry);
-        border-radius: 14px;
-        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+        background: #fff;
     }
     .menu-panel[hidden] {
         display: none;
-    }
-    .menu-panel li + li {
-        margin-top: 6px;
     }
     .menu-panel a {
         display: flex;
