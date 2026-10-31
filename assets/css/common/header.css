@@ -187,10 +187,10 @@ body:not(.dark) #sun {
     flex-wrap: inherit;
 }
 
-/* ---- Header as a soft-blue tab hanging from the top of the page ----
+/* ---- Header as an accent-blue tab hanging from the top of the page ----
    The bar is as wide as the content column, runs up to the very top edge,
    and is rounded only at the bottom, so it reads as coming down out of the page.
-   Pills keep the dark-grey outline; hover fills accent blue; the current page is blue. */
+   White bird, name and outlined pills; hover and the current page are solid white with blue text. */
 .header {
     position: relative;
     z-index: 10;
@@ -206,7 +206,7 @@ body:not(.dark) #sun {
     box-sizing: border-box;
     min-height: 0;
     padding: 9px 16px;
-    background: color-mix(in srgb, var(--darkcolor) 28%, var(--code-bg));
+    background: var(--darkcolor);
     border-radius: 0 0 14px 14px;
 }
 
@@ -218,7 +218,7 @@ body:not(.dark) #sun {
 .logo a {
     height: 38px;
     padding: 0;
-    color: var(--primary);
+    color: #fff;
     background: transparent;
     border-radius: 0;
     transition: opacity 0.15s;
@@ -227,6 +227,25 @@ body:not(.dark) #sun {
 .logo a:hover {
     background: transparent;
     opacity: 0.75;
+}
+
+/* White pills on the blue bar; current page and hover are solid white with blue text */
+#menu a {
+    color: #fff;
+    border-color: #fff;
+}
+
+#menu a.active,
+#menu a:hover,
+#menu a:focus-visible {
+    color: var(--darkcolor);
+    background: #fff;
+    border-color: #fff;
+}
+
+#menu a:focus-visible,
+.logo a:focus-visible {
+    outline-color: #fff;
 }
 
 /* Phone controls are hidden on desktop */
@@ -260,27 +279,24 @@ body:not(.dark) #sun {
         width: 38px;
         height: 38px;
         padding: 0;
-        color: var(--primary);
+        color: #fff;
         background: transparent;
-        border: 1.5px solid var(--primary);
+        border: 1.5px solid #fff;
         border-radius: 50%;
         cursor: pointer;
         font: inherit;
         transition: background-color 0.15s, color 0.15s, border-color 0.15s;
     }
-    .mobile-nav .round-btn.active {
-        color: var(--darkcolor);
-        border-color: var(--darkcolor);
-    }
+    .mobile-nav .round-btn.active,
     .mobile-nav .round-btn:hover,
     .mobile-nav .round-btn:focus-visible,
     .mobile-nav .round-btn[aria-expanded="true"] {
-        color: var(--code-bg);
-        background: var(--darkcolor);
-        border-color: var(--darkcolor);
+        color: var(--darkcolor);
+        background: #fff;
+        border-color: #fff;
     }
     .mobile-nav .round-btn:focus-visible {
-        outline: 2px solid var(--darkcolor);
+        outline: 2px solid #fff;
         outline-offset: 2px;
     }
     .mobile-nav .round-btn .menu-icon {

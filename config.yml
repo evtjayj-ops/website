@@ -91,7 +91,7 @@ params:
     hiddenInSingle: true
   label:
     text: Jayden Evett
-    icon: images/bird-header.png
+    icon: images/bird-header-white.png
     iconHeight: 20
 markup:
   goldmark:
